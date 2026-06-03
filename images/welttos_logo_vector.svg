@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 320 290" width="320" height="290">
+  <defs>
+    <!-- Left wing gradient: teal to blue-teal -->
+    <linearGradient id="leftGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5EC8B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5BA8D8;stop-opacity:1" />
+    </linearGradient>
+    <!-- Right wing gradient: blue to lighter blue -->
+    <linearGradient id="rightGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5BA8D8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6DC4DC;stop-opacity:1" />
+    </linearGradient>
+    <!-- Full W gradient left to right -->
+    <linearGradient id="wGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5EC8B0" />
+      <stop offset="50%" style="stop-color:#5BA8D8" />
+      <stop offset="100%" style="stop-color:#6DC4E8" />
+    </linearGradient>
+  </defs>
+
+  <!-- W shape: two wings forming a W with a gap in the center top -->
+  <!-- Left wing of W -->
+  <path d="M 50,55 L 130,160 L 160,115 L 130,55 Z" fill="url(#leftGrad)" />
+  <!-- Right wing of W -->
+  <path d="M 270,55 L 190,160 L 160,115 L 190,55 Z" fill="url(#rightGrad)" />
+
+  <!-- Dark navy dot above the center dip -->
+  <circle cx="160" cy="52" r="12" fill="#0D1B2E" />
+
+  <!-- Company name -->
+  <text x="160" y="230" 
+        font-family="'Helvetica Neue', Arial, sans-serif" 
+        font-size="42" 
+        font-weight="600"
+        letter-spacing="2"
+        fill="#0D1B2E" 
+        text-anchor="middle">welttos</text>
+</svg>
