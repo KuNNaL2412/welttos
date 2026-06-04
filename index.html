@@ -1,86 +1,100 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Welttos Technologies — AI & Tech Solutions</title>
+<meta name="description" content="Pune-based AI & Tech company delivering intelligent voice agents, document intelligence, and smart visitor management for modern businesses."/>
+<meta name="theme-color" content="#05060F"/>
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Welttos Technologies — AI & Tech Solutions"/>
+<meta property="og:description" content="Pune-based AI & Tech company delivering intelligent voice agents, document intelligence, and smart visitor management for modern businesses."/>
+<meta property="og:image" content="assets/logo.svg"/>
+<meta property="og:site_name" content="Welttos Technologies"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Welttos Technologies — AI & Tech Solutions"/>
+<meta name="twitter:description" content="Pune-based AI & Tech company delivering intelligent voice agents, document intelligence, and smart visitor management for modern businesses."/>
+<meta name="twitter:image" content="assets/logo.svg"/>
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="assets/index.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
 
 <canvas id="bg-canvas"></canvas>
 
-<!-- ════════ NAV ════════ -->
 <nav id="main-nav">
-  <div class="logo" onclick="showPage('home')">
-    <div class="logo-mark" style="width:42px;height:42px;border-radius:10px;margin-right:10px;display:flex;align-items:center;justify-content:center;overflow:visible;"><svg width="42" height="42" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <defs> <linearGradient id="wt_g" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" stop-color="#00DCFF"/> <stop offset="55%" stop-color="#8B6FFF"/> <stop offset="100%" stop-color="#FF6B9D"/> </linearGradient> <filter id="wt_gw" x="-30%" y="-30%" width="160%" height="160%"> <feGaussianBlur stdDeviation="3.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <filter id="wt_nw" x="-80%" y="-80%" width="260%" height="260%"> <feGaussianBlur stdDeviation="2.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <radialGradient id="wt_bg" cx="50%" cy="50%" r="50%"> <stop offset="0%" stop-color="#0B0D1A"/> <stop offset="100%" stop-color="#05060F"/> </radialGradient> <clipPath id="wt_c"><circle cx="100" cy="100" r="94"/></clipPath> </defs> <circle cx="100" cy="100" r="95" fill="url(#wt_bg)"/> <circle cx="100" cy="100" r="92" stroke="url(#wt_g)" stroke-width="1" fill="none" opacity="0.4"/> <g clip-path="url(#wt_c)" opacity="0.18" stroke="#00DCFF" stroke-width="0.9" fill="none"> <line x1="36" y1="56" x2="62" y2="72"/> <line x1="164" y1="56" x2="138" y2="72"/> <line x1="75" y1="128" x2="50" y2="150"/> <line x1="125" y1="128" x2="150" y2="150"/> <line x1="100" y1="112" x2="100" y2="152"/> <line x1="36" y1="56" x2="100" y2="48"/> <line x1="164" y1="56" x2="100" y2="48"/> </g> <path d="M 62 72 L 75 128 L 100 104 L 125 128 L 138 72" stroke="url(#wt_g)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#wt_gw)"/> <line x1="55" y1="72" x2="145" y2="72" stroke="url(#wt_g)" stroke-width="2.5" stroke-linecap="round" opacity="0.38"/> <circle cx="36" cy="56" r="5" fill="#00DCFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="36" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="164" cy="56" r="5" fill="#8B6FFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="164" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="50" cy="150" r="4.5" fill="#00DCFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="50" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="150" cy="150" r="4.5" fill="#8B6FFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="150" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="100" cy="152" r="5" fill="#AAFF57" opacity="0.88" filter="url(#wt_nw)"/> <circle cx="100" cy="152" r="2.2" fill="#fff" opacity="0.92"/> <circle cx="62" cy="72" r="3.2" fill="#00DCFF" opacity="0.92"/> <circle cx="138" cy="72" r="3.2" fill="#8B6FFF" opacity="0.92"/> <circle cx="100" cy="104" r="3.5" fill="#AAFF57" opacity="0.95"/> <circle cx="75" cy="128" r="2.8" fill="#00DCFF" opacity="0.72"/> <circle cx="125" cy="128" r="2.8" fill="#8B6FFF" opacity="0.72"/> </svg></div>
+  <a href="index.html" class="logo">
+    <div class="logo-mark"><img src="assets/logo.svg" alt="Welttos logo"/></div>
     Welt<em>tos</em>
-  </div>
-  <div class="nav-links">
-    <a id="nav-home" class="active" onclick="showPage('home')">Home</a>
-    <a id="nav-products" onclick="showPage('products')">Products</a>
-    <a id="nav-pricing" onclick="showPage('pricing')">Pricing</a>
-    <a id="nav-about" onclick="showPage('about')">About</a>
-    <a id="nav-contact" onclick="showPage('contact')">Contact</a>
-    <a class="nav-cta" onclick="showPage('contact')">Get a Demo</a>
+  </a>
+
+  <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-sidebar">
+    <span class="hamburger-bars"><span></span></span>
+  </button>
+
+  <div class="nav-links" id="nav-sidebar">
+    <div class="sidebar-header">Navigation</div>
+    <a href="index.html" class="active">Home</a>
+    <a href="products.html">Products</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav-cta">Get a Demo</a>
     <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle light/dark theme">
-      <div class="theme-toggle-thumb theme-toggle-icon" id="theme-icon">🌙</div>
+      <div class="theme-toggle-thumb" id="theme-icon">🌙</div>
     </button>
   </div>
+
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
 </nav>
 
-<!-- ════════════════════════════════
-     HOME PAGE
-════════════════════════════════ -->
-<div id="page-home" class="page active">
-
-  <!-- HERO -->
+<main>
   <section class="hero">
     <div class="hero-glow hero-glow-1"></div>
     <div class="hero-glow hero-glow-2"></div>
     <div class="hero-glow hero-glow-3"></div>
     <div class="hero-content">
-      <div class="chip"><div class="chip-dot"></div><span id="badge-text">AI & Tech Solutions Built for Real Results</span></div>
+      <div class="chip"><div class="chip-dot"></div><span id="badge-text">AI &amp; Tech Solutions Built for Real Results</span></div>
       <h1>We Build <span class="grad">Solutions</span> That Drive Results</h1>
-      <p class="hero-sub">Welttos Technologies is a Pune-based AI & tech company delivering intelligent systems built for modern businesses.</p>
+      <p class="hero-sub">Welttos Technologies is a Pune-based AI &amp; tech company delivering intelligent systems built for modern businesses.</p>
       <div class="btns">
-        <button class="btn btn-fill" onclick="showPage('products')">Explore Our Solutions →</button>
-        <button class="btn btn-outline" onclick="showPage('contact')">Talk to Us</button>
+        <a href="products.html" class="btn btn-fill">Explore Our Solutions →</a>
+        <a href="contact.html" class="btn btn-outline">Talk to Us</a>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTS OVERVIEW -->
   <section class="sec-alt-bg">
     <div class="sec-hd center">
       <h2><span class="hl">Our Solutions</span></h2>
       <p class="sec-sub">Welttos builds AI-powered tools that automate communication, unlock document intelligence, and secure communities.</p>
     </div>
     <div class="prod-grid">
-      <div class="prod-card fu" onclick="showPage('products')">
-        <img class="prod-img" src="./images/ai-voice-agents.png" alt="AI Voice Calling Agents"/>
+      <a href="products.html" class="prod-card fu" style="text-decoration:none;">
+        <img class="prod-img" src="images/ai-voice-agents.png" alt="AI Voice Calling Agents"/>
         <div class="prod-body">
           <div class="prod-icon">🎙️</div>
           <h3>AI Voice Calling Agents</h3>
-          <p>Autonomous inbound & outbound calling agents that handle leads, support tickets, and sales 24/7 with human-like precision.</p>
+          <p>Autonomous inbound &amp; outbound calling agents that handle leads, support tickets, and sales 24/7 with human-like precision.</p>
           <div class="prod-tag">Voice AI · Live</div>
         </div>
-      </div>
-      <div class="prod-card fu" onclick="showPage('products')">
-        <img class="prod-img" src="./images/document-monitoring.png" alt="Document Monitoring System"/>
+      </a>
+      <a href="products.html" class="prod-card fu" style="text-decoration:none;">
+        <img class="prod-img" src="images/document-monitoring.png" alt="Document Monitoring System"/>
         <div class="prod-body">
           <div class="prod-icon" style="background:var(--violet2);border-color:rgba(139,111,255,.3)">📄</div>
           <h3>Document Monitoring System</h3>
           <p>Index, search, and chat with your local documents using AI. On-premise, secure, real-time change monitoring.</p>
           <div class="prod-tag prod-tag-v">Document AI · Live</div>
         </div>
-      </div>
-      <div class="cs-wrap fu" onclick="showPage('products')">
+      </a>
+      <a href="products.html" class="cs-wrap fu" style="text-decoration:none;">
         <div class="prod-card" style="border-radius:0">
-          <img class="prod-img" src="./images/my-gate-app.png" alt="MyGate App"/>
+          <img class="prod-img" src="images/my-gate-app.png" alt="MyGate App"/>
           <div class="prod-body">
             <div class="prod-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">🏘️</div>
             <h3>MyGate App</h3>
@@ -92,23 +106,22 @@
           <div class="cs-badge"><div class="cs-badge-dot"></div>COMING SOON</div>
           <div class="cs-sub">Join the waitlist</div>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
-  <!-- WHY WELTTOS -->
-  <section style="background:var(--sec-hd);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+  <section>
+    <div class="why-grid">
       <div class="fu">
-        <span class="sec-tag" style="margin-bottom:16px;display:inline-flex;align-items:center;gap:6px;">Why Welttos</span>
+        <span class="sec-tag">Why Welttos</span>
         <h2>Solution That's Built for <span class="hl">Your Business</span></h2>
         <p style="color:var(--text2);line-height:1.8;margin-bottom:28px;font-size:.97rem;">We build custom intelligent systems trained on your data, integrated into your workflows, and optimised for your specific outcomes. Every deployment is unique — just like your business.</p>
-        <a style="display:inline-flex;align-items:center;gap:6px;font-size:.88rem;font-weight:600;color:var(--primary);cursor:pointer;text-decoration:none;transition:opacity .2s;" onmouseenter="this.style.opacity='.75'" onmouseleave="this.style.opacity='1'" onclick="showPage('about')">
+        <a href="about.html" class="learn-more">
           Learn more about us
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
-      <div class="fu" style="display:flex;flex-direction:column;gap:10px;">
+      <div class="fu why-col">
         <div class="why-item"><div class="why-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg></div><span>Custom AI Models trained on your data</span></div>
         <div class="why-item"><div class="why-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg></div><span>Enterprise-Grade Security &amp; Compliance</span></div>
         <div class="why-item"><div class="why-check"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg></div><span>Seamless Integration with existing tools</span></div>
@@ -119,7 +132,6 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS -->
   <section class="sec-alt-bg">
     <div class="sec-hd center">
       <div class="sec-tag">How It Works</div>
@@ -129,13 +141,12 @@
     <div class="steps">
       <div class="step fu"><div class="step-n">1</div><div class="step-t">Consultation</div><div class="step-d">Our team understands your business needs and recommends the right Welttos solution.</div></div>
       <div class="step fu"><div class="step-n">2</div><div class="step-t">Configure</div><div class="step-d">We configure your solution — agent personas, document watchers, or gate rules — to your exact requirements.</div></div>
-      <div class="step fu"><div class="step-n">3</div><div class="step-t">Test & Validate</div><div class="step-d">Run simulations, test call flows, and verify everything works perfectly before going live.</div></div>
+      <div class="step fu"><div class="step-n">3</div><div class="step-t">Test &amp; Validate</div><div class="step-d">Run simulations, test call flows, and verify everything works perfectly before going live.</div></div>
       <div class="step fu"><div class="step-n">4</div><div class="step-t">Go Live</div><div class="step-d">We deploy your solution and monitor it continuously. Ongoing support from day one.</div></div>
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="sec-hd">
+  <section>
     <div class="sec-hd center"><div class="sec-tag">Client Stories</div><h2>Trusted by <span class="hl">Growing Businesses</span></h2></div>
     <div class="test-grid">
       <div class="test-card fu">
@@ -151,7 +162,6 @@
     </div>
   </section>
 
-  <!-- FAQ -->
   <section class="sec-alt-bg">
     <div class="sec-hd center"><div class="sec-tag">FAQ</div><h2>Common <span class="hl">Questions</span></h2></div>
     <div class="faq">
@@ -162,632 +172,44 @@
     </div>
   </section>
 
-  <!-- CTA -->
-  <div style="border-top: 1px solid var(--border);border-bottom: 2px solid var(--border);padding: 100px 5vw;text-align: center;">
+  <div class="cta-band">
     <div class="sec-tag" style="display:inline-block;margin-bottom:14px">Get Started</div>
     <h2>Ready to Deploy <span class="hl">Welttos AI?</span></h2>
     <p>Join businesses already transforming operations with our AI solutions.</p>
     <div class="cta-btns">
-      <button class="btn btn-fill" onclick="showPage('contact')">Book a Free Demo →</button>
-      <button class="btn btn-outline" onclick="showPage('pricing')">View Pricing</button>
+      <a href="contact.html" class="btn btn-fill">Book a Free Demo →</a>
+      <a href="pricing.html" class="btn btn-outline">View Pricing</a>
     </div>
   </div>
+</main>
 
-  <footer>
-    <div class="fg">
-      <div class="fb"><div class="logo" onclick="showPage('home')" style="margin-bottom:0"><div class="logo-mark" style="width:32px;height:32px;border-radius:8px;margin-right:8px;display:flex;align-items:center;justify-content:center;overflow:visible;"><svg width="32" height="32" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <defs> <linearGradient id="wt_g" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" stop-color="#00DCFF"/> <stop offset="55%" stop-color="#8B6FFF"/> <stop offset="100%" stop-color="#FF6B9D"/> </linearGradient> <filter id="wt_gw" x="-30%" y="-30%" width="160%" height="160%"> <feGaussianBlur stdDeviation="3.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <filter id="wt_nw" x="-80%" y="-80%" width="260%" height="260%"> <feGaussianBlur stdDeviation="2.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <radialGradient id="wt_bg" cx="50%" cy="50%" r="50%"> <stop offset="0%" stop-color="#0B0D1A"/> <stop offset="100%" stop-color="#05060F"/> </radialGradient> <clipPath id="wt_c"><circle cx="100" cy="100" r="94"/></clipPath> </defs> <circle cx="100" cy="100" r="95" fill="url(#wt_bg)"/> <circle cx="100" cy="100" r="92" stroke="url(#wt_g)" stroke-width="1" fill="none" opacity="0.4"/> <g clip-path="url(#wt_c)" opacity="0.18" stroke="#00DCFF" stroke-width="0.9" fill="none"> <line x1="36" y1="56" x2="62" y2="72"/> <line x1="164" y1="56" x2="138" y2="72"/> <line x1="75" y1="128" x2="50" y2="150"/> <line x1="125" y1="128" x2="150" y2="150"/> <line x1="100" y1="112" x2="100" y2="152"/> <line x1="36" y1="56" x2="100" y2="48"/> <line x1="164" y1="56" x2="100" y2="48"/> </g> <path d="M 62 72 L 75 128 L 100 104 L 125 128 L 138 72" stroke="url(#wt_g)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#wt_gw)"/> <line x1="55" y1="72" x2="145" y2="72" stroke="url(#wt_g)" stroke-width="2.5" stroke-linecap="round" opacity="0.38"/> <circle cx="36" cy="56" r="5" fill="#00DCFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="36" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="164" cy="56" r="5" fill="#8B6FFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="164" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="50" cy="150" r="4.5" fill="#00DCFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="50" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="150" cy="150" r="4.5" fill="#8B6FFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="150" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="100" cy="152" r="5" fill="#AAFF57" opacity="0.88" filter="url(#wt_nw)"/> <circle cx="100" cy="152" r="2.2" fill="#fff" opacity="0.92"/> <circle cx="62" cy="72" r="3.2" fill="#00DCFF" opacity="0.92"/> <circle cx="138" cy="72" r="3.2" fill="#8B6FFF" opacity="0.92"/> <circle cx="100" cy="104" r="3.5" fill="#AAFF57" opacity="0.95"/> <circle cx="75" cy="128" r="2.8" fill="#00DCFF" opacity="0.72"/> <circle cx="125" cy="128" r="2.8" fill="#8B6FFF" opacity="0.72"/> </svg></div>Welt<em>tos</em></div><p>AI & Tech solutions for modern Indian businesses. Built in India 🇮🇳</p></div>
-      <div class="fc"><h4>Solutions</h4><ul><li><a onclick="showPage('products')">Voice AI Agents</a></li><li><a onclick="showPage('products')">Document Monitoring</a></li><li><a onclick="showPage('products')">MyGate App</a></li></ul></div>
-      <div class="fc"><h4>Company</h4><ul><li><a onclick="showPage('about')">About Us</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
+<footer>
+  <div class="fg">
+    <div class="fb">
+      <a href="index.html" class="logo" style="margin-bottom:0">
+        <div class="logo-mark logo-mark-sm"><img src="assets/logo.svg" alt="Welttos logo"/></div>
+        Welt<em>tos</em>
+      </a>
+      <p>AI &amp; Tech solutions for modern Indian businesses. Built in India 🇮🇳</p>
     </div>
-  </footer>
-</div>
-<!-- ════════════════════════════════
-     PRODUCTS PAGE
-════════════════════════════════ -->
-<div id="page-products" class="page">
-
-  <section class="pd-hero">
-    <div class="sec-tag">Our Products &amp; Services</div>
-    <h2>AI Solutions Built for <span class="hl">Real Results</span></h2>
-    <p class="sec-sub" style="margin:0 auto">Three powerful AI solutions designed to automate, monitor, and manage — so your business runs smarter, faster, and more securely.</p>
-  </section>
-
-  <!-- PRODUCT 01: VOICE AGENTS -->
-  <div class="pds">
-    <div class="fu">
-      <div class="pbadge pb-c">Product 01</div>
-      <h2>AI Voice Calling Agents —<br><span class="hl">Outbound &amp; Inbound</span></h2>
-      <p style="color:var(--text2);margin-top:14px;line-height:1.8;font-size:.95rem;">Deploy intelligent AI-powered voice agents that handle calls 24/7 — no human needed. From lead qualification to customer support, our agents speak, listen, and act with human-like precision.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0px;">
-        <span class="prod-tag">Outbound Campaigns</span>
-        <span class="prod-tag">Inbound Support</span>
-        <span class="prod-tag">Sales Automation</span>
-        <span class="prod-tag">Lead Qualification</span>
-      </div>
+    <div class="fc">
+      <h4>Solutions</h4>
+      <ul>
+        <li><a href="products.html">Voice AI Agents</a></li>
+        <li><a href="products.html">Document Monitoring</a></li>
+        <li><a href="products.html">MyGate App</a></li>
+      </ul>
     </div>
-    <div class="fu">
-      <img src="./images/ai-voice-agents.png" alt="Voice Agents" style="width:100%;border-radius:16px;border:1px solid var(--border);display:block;height:52vh;object-fit:cover;"/>
+    <div class="fc">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
   </div>
+</footer>
 
-  <!-- Voice Feature Cards -->
-  <section style="padding:50px 5vw;">
-    <div class="f4-grid">
-      <div class="f-card fu"><div class="f-icon">📤</div><h3>Outbound Calling</h3><p>Automated outreach campaigns, lead follow-ups, and appointment scheduling at scale.</p></div>
-      <div class="f-card fu"><div class="f-icon">📥</div><h3>Inbound Calling</h3><p>Handle customer queries, support tickets, and FAQs automatically — 24/7.</p></div>
-      <div class="f-card fu"><div class="f-icon">👥</div><h3>Sales Rep Agent</h3><p>Qualify prospects, pitch products, and close deals via intelligent voice conversations.</p></div>
-      <div class="f-card fu"><div class="f-icon">📊</div><h3>Lead Qualification</h3><p>Score and qualify leads in real-time during calls using AI-driven conversation logic.</p></div>
-      <div class="f-card fu"><div class="f-icon">🌐</div><h3>Multi-language Support</h3><p>Communicate fluently in 40+ languages — expand your reach globally.</p></div>
-      <div class="f-card fu"><div class="f-icon">🗄️</div><h3>CRM Integration</h3><p>Sync call data, notes, and outcomes to your CRM automatically after every call.</p></div>
-      <div class="f-card fu"><div class="f-icon">🎙️</div><h3>Real-time Analytics</h3><p>Call recordings, transcripts, and sentiment analysis dashboard for every interaction.</p></div>
-      <div class="f-card fu"><div class="f-icon">🎭</div><h3>Custom Voice &amp; Persona</h3><p>Train the agent with your brand voice, script, and personality for authentic interactions.</p></div>
-    </div>
-    <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.2rem;color:var(--text);margin-bottom:28px;margin-top:28px;">Use Case Scenarios</h3>
-    <div class="uc-grid">
-      <div class="uc-item"><div class="uc-icon">📅</div><div><div class="uc-t">Appointment Reminders</div><div class="uc-d">Auto-call patients/clients to confirm or reschedule appointments.</div></div></div>
-      <div class="uc-item"><div class="uc-icon">🎯</div><div><div class="uc-t">Cold Outreach</div><div class="uc-d">Run high-volume outbound campaigns without a sales team.</div></div></div>
-      <div class="uc-item"><div class="uc-icon">📞</div><div><div class="uc-t">Customer Support</div><div class="uc-d">First-line support that resolves 80% of queries without escalation.</div></div></div>
-      <div class="uc-item"><div class="uc-icon">📋</div><div><div class="uc-t">Survey &amp; Feedback</div><div class="uc-d">Collect post-service feedback via automated voice surveys.</div></div></div>
-      <div class="uc-item"><div class="uc-icon">💰</div><div><div class="uc-t">Debt Collection</div><div class="uc-d">Polite, compliant automated follow-ups for overdue payments.</div></div></div>
-      <div class="uc-item"><div class="uc-icon">✅</div><div><div class="uc-t">Order Confirmation</div><div class="uc-d">Confirm orders, delivery slots, and updates via voice calls.</div></div></div>
-    </div>
-  </section>
-
-  <!-- PRODUCT 02: DOCUMENT MONITORING -->
-  <div class="pds" style="background:var(--sec-alt);">
-    <div class="fu">
-      <img src="./images/document-monitoring.png" alt="Document Monitoring" style="width:100%;border-radius:16px;border:1px solid var(--border);display:block;"/>
-    </div>
-    <div class="fu">
-      <div class="pbadge pb-v">Product 02</div>
-      <h2>AI-Powered <span class="hlv">Document Intelligence</span></h2>
-      <p style="color:var(--text2);margin-top:14px;line-height:1.8;font-size:.95rem;">Monitor, search, and interact with all your local documents using AI. Ask questions in plain English and get instant answers extracted directly from your files — securely, locally.</p>
-      <div style="display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0px;">
-        <span class="prod-tag prod-tag-v">Smart Indexing</span>
-        <span class="prod-tag prod-tag-v">Natural Language Q&amp;A</span>
-        <span class="prod-tag prod-tag-v">Real-time Monitoring</span>
-        <span class="prod-tag prod-tag-v">Secure Local Processing</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Document Feature Cards -->
-  <section style="padding:50px 5vw;">
-    <div class="f4-grid">
-      <div class="f-card fu" style="border-color:rgba(139,111,255,.15)"><div class="f-icon" style="background:var(--violet2);border-color:rgba(139,111,255,.3)">📑</div><h3>Smart Document Indexing</h3><p>Automatically indexes all local documents by content — PDFs, Word, Excel, and more.</p></div>
-      <div class="f-card fu" style="border-color:rgba(139,111,255,.15)"><div class="f-icon" style="background:var(--violet2);border-color:rgba(139,111,255,.3)">🔍</div><h3>Natural Language Search</h3><p>Find any document by asking in plain English. No complex query syntax needed.</p></div>
-      <div class="f-card fu" style="border-color:rgba(139,111,255,.15)"><div class="f-icon" style="background:var(--violet2);border-color:rgba(139,111,255,.3)">💬</div><h3>Q&amp;A with Documents</h3><p>Ask questions and get precise answers extracted directly from your document content.</p></div>
-      <div class="f-card fu" style="border-color:rgba(139,111,255,.15)"><div class="f-icon" style="background:var(--violet2);border-color:rgba(139,111,255,.3)">🔄</div><h3>Real-time Monitoring</h3><p>Watch folders for new or changed documents and auto-index them instantly.</p></div>
-      <div class="f-card fu" style="border-color:rgba(139,111,255,.15)"><div class="f-icon" style="background:var(--violet2);border-color:rgba(139,111,255,.3)">📂</div><h3>Multi-format Support</h3><p>PDF, Word, Excel, PowerPoint, TXT, and more — all formats supported out of the box.</p></div>
-      <div class="f-card fu" style="border-color:rgba(139,111,255,.15)"><div class="f-icon" style="background:var(--violet2);border-color:rgba(139,111,255,.3)">🔒</div><h3>Secure Local Processing</h3><p>Your data never leaves your infrastructure. All processing happens on your servers.</p></div>
-      <div class="f-card fu" style="border-color:rgba(139,111,255,.15)"><div class="f-icon" style="background:var(--violet2);border-color:rgba(139,111,255,.3)">📌</div><h3>Version Tracking</h3><p>Track document changes over time with full version history and diff comparison.</p></div>
-      <div class="f-card fu" style="border-color:rgba(139,111,255,.15)"><div class="f-icon" style="background:var(--violet2);border-color:rgba(139,111,255,.3)">📤</div><h3>Bulk Export &amp; Reports</h3><p>Generate summaries and comprehensive reports from entire document sets in one click.</p></div>
-    </div>
-  </section>
-
-  <!-- PRODUCT 03: MYGATE — COMING SOON -->
-  <div>
-    <div style="position:relative;border-radius:20px;overflow:hidden;">
-      <div style="opacity:.25;filter:blur(4px);pointer-events:none;">
-        <div class="pds" style="background:var(--sec-alt);">
-          <div class="fu">
-            <div class="pbadge pb-a">Product 03</div>
-            <h2>Smart Visitor Management for <span style="color:var(--amber)">Housing Societies</span></h2>
-            <p style="color:var(--text2);margin-top:14px;line-height:1.8;">A complete digital gate management solution for modern residential communities.</p>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 0px;">
-              <span class="prod-tag prod-tag-a">Visitor Requests</span>
-              <span class="prod-tag prod-tag-a">Instant Approvals</span>
-              <span class="prod-tag prod-tag-a">Guard Dashboard</span>
-              <span class="prod-tag prod-tag-a">Delivery Management</span>
-            </div>
-          </div>
-          <div class="fu">
-            <img src="./images/my-gate-app.png" alt="MyGate" style="width:100%;border-radius:16px;border:1px solid var(--border);display:block;"/>
-          </div>
-        </div>
-        <section style="padding:50px 5vw;">
-          <div class="f4-grid">
-            <div class="f-card fu" style="border-color:rgba(255,184,48,.15)"><div class="f-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">📱</div><h3>Visitor Request System</h3><p>Visitor sends an entry request from the gate via the app — instantly notifying the resident.</p></div>
-            <div class="f-card fu" style="border-color:rgba(255,184,48,.15)"><div class="f-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">🔔</div><h3>Instant Resident Notification</h3><p>Resident receives a real-time push notification with visitor details and photo.</p></div>
-            <div class="f-card fu" style="border-color:rgba(255,184,48,.15)"><div class="f-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">✅</div><h3>One-tap Approval/Denial</h3><p>Resident approves or denies entry with a single tap — no calls, no delays.</p></div>
-            <div class="f-card fu" style="border-color:rgba(255,184,48,.15)"><div class="f-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">🖥️</div><h3>Security Guard Dashboard</h3><p>Guard sees all approved visitors on their device and manages gate access seamlessly.</p></div>
-            <div class="f-card fu" style="border-color:rgba(255,184,48,.15)"><div class="f-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">📋</div><h3>Pre-approved Visitor Lists</h3><p>Residents can pre-approve frequent visitors like family, maids, or drivers.</p></div>
-            <div class="f-card fu" style="border-color:rgba(255,184,48,.15)"><div class="f-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">📦</div><h3>Delivery Management</h3><p>Handle courier and delivery entries with OTP-based verification for secure handoffs.</p></div>
-            <div class="f-card fu" style="border-color:rgba(255,184,48,.15)"><div class="f-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">🕐</div><h3>Visitor History &amp; Logs</h3><p>Complete audit trail of all entries and exits with timestamps and photos.</p></div>
-            <div class="f-card fu" style="border-color:rgba(255,184,48,.15)"><div class="f-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">🚨</div><h3>Emergency Alerts</h3><p>Panic button and emergency broadcast to all residents and security personnel.</p></div>
-            <div class="f-card fu" style="border-color:rgba(255,184,48,.15)"><div class="f-icon" style="background:var(--amberglow);border-color:rgba(255,184,48,.3)">⚙️</div><h3>Society Admin Panel</h3><p>Manage multiple gates, guards, residents, and societies from a central admin dashboard.</p></div>
-          </div>
-        </section>
-      </div>
-      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;background:var(--cs-overlay);backdrop-filter:blur(5px);border-radius:20px;">
-        <div class="cs-badge" style="font-size:.85rem;padding:9px 24px;"><div class="cs-badge-dot"></div>COMING SOON</div>
-        <div style="font-size:.92rem;color:var(--cs-badge-text);text-align:center;max-width:440px;line-height:1.7;opacity:.9;">Smart visitor management for housing societies. We're putting the finishing touches on this product — join the waitlist to be among the first to experience it.</div>
-        <button class="btn" style="margin-top:6px;background:var(--cs-badge-bg);color:var(--cs-badge-text);border:1px solid var(--cs-badge-bor);" onclick="showPage('contact')">Enquire Now →</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="cta-band">
-    <h2>Ready to Deploy <span class="hl">Welttos Solutions?</span></h2>
-    <p>Every solution is custom-configured for your business. Let's build something that works for you.</p>
-    <div class="cta-btns">
-      <button class="btn btn-fill" onclick="showPage('contact')">Book a Free Demo →</button>
-      <button class="btn btn-outline" onclick="showPage('pricing')">View Custom Pricing</button>
-    </div>
-  </div>
-
-  <footer>
-    <div class="fg">
-      <div class="fb"><div class="logo" onclick="showPage('home')" style="margin-bottom:0"><div class="logo-mark" style="width:32px;height:32px;border-radius:8px;margin-right:8px;display:flex;align-items:center;justify-content:center;overflow:visible;"><svg width="32" height="32" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <defs> <linearGradient id="wt_g" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" stop-color="#00DCFF"/> <stop offset="55%" stop-color="#8B6FFF"/> <stop offset="100%" stop-color="#FF6B9D"/> </linearGradient> <filter id="wt_gw" x="-30%" y="-30%" width="160%" height="160%"> <feGaussianBlur stdDeviation="3.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <filter id="wt_nw" x="-80%" y="-80%" width="260%" height="260%"> <feGaussianBlur stdDeviation="2.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <radialGradient id="wt_bg" cx="50%" cy="50%" r="50%"> <stop offset="0%" stop-color="#0B0D1A"/> <stop offset="100%" stop-color="#05060F"/> </radialGradient> <clipPath id="wt_c"><circle cx="100" cy="100" r="94"/></clipPath> </defs> <circle cx="100" cy="100" r="95" fill="url(#wt_bg)"/> <circle cx="100" cy="100" r="92" stroke="url(#wt_g)" stroke-width="1" fill="none" opacity="0.4"/> <g clip-path="url(#wt_c)" opacity="0.18" stroke="#00DCFF" stroke-width="0.9" fill="none"> <line x1="36" y1="56" x2="62" y2="72"/> <line x1="164" y1="56" x2="138" y2="72"/> <line x1="75" y1="128" x2="50" y2="150"/> <line x1="125" y1="128" x2="150" y2="150"/> <line x1="100" y1="112" x2="100" y2="152"/> <line x1="36" y1="56" x2="100" y2="48"/> <line x1="164" y1="56" x2="100" y2="48"/> </g> <path d="M 62 72 L 75 128 L 100 104 L 125 128 L 138 72" stroke="url(#wt_g)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#wt_gw)"/> <line x1="55" y1="72" x2="145" y2="72" stroke="url(#wt_g)" stroke-width="2.5" stroke-linecap="round" opacity="0.38"/> <circle cx="36" cy="56" r="5" fill="#00DCFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="36" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="164" cy="56" r="5" fill="#8B6FFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="164" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="50" cy="150" r="4.5" fill="#00DCFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="50" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="150" cy="150" r="4.5" fill="#8B6FFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="150" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="100" cy="152" r="5" fill="#AAFF57" opacity="0.88" filter="url(#wt_nw)"/> <circle cx="100" cy="152" r="2.2" fill="#fff" opacity="0.92"/> <circle cx="62" cy="72" r="3.2" fill="#00DCFF" opacity="0.92"/> <circle cx="138" cy="72" r="3.2" fill="#8B6FFF" opacity="0.92"/> <circle cx="100" cy="104" r="3.5" fill="#AAFF57" opacity="0.95"/> <circle cx="75" cy="128" r="2.8" fill="#00DCFF" opacity="0.72"/> <circle cx="125" cy="128" r="2.8" fill="#8B6FFF" opacity="0.72"/> </svg></div>Welt<em>tos</em></div><p>AI & Tech solutions for modern Indian businesses. Built in India 🇮🇳</p></div>
-      <div class="fc"><h4>Solutions</h4><ul><li><a onclick="showPage('products')">Voice AI Agents</a></li><li><a onclick="showPage('products')">Document Monitoring</a></li><li><a onclick="showPage('products')">MyGate App</a></li></ul></div>
-      <div class="fc"><h4>Company</h4><ul><li><a onclick="showPage('about')">About Us</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-    </div>
-  </footer>
-</div>
-<!-- ════════════════════════════════
-     PRICING PAGE
-════════════════════════════════ -->
-<div id="page-pricing" class="page">
-
-  <section class="pricing-hero">
-    <div class="chip" style="margin-bottom:20px;"><div class="chip-dot"></div>Flexible Pricing</div>
-    <h2>Pricing Built Around <span class="hl">Your Needs</span></h2>
-    <p class="sec-sub" style="margin:0 auto">Every business is different. Our pricing scales with your requirements — no hidden fees, no surprises.<br>All prices are custom-quoted based on your specific requirements and scale.</p>
-  </section>
-
-  <!-- VOICE CALLING AGENTS PRICING -->
-  <section style="padding:60px 5vw 80px;">
-    <div class="price-group-hd">
-      <div class="chip"><div class="chip-dot"></div>AI Voice Calling Agents</div>
-      <p style="color:var(--muted);margin-top:10px;font-size:.9rem;">Scalable voice AI for businesses of all sizes</p>
-    </div>
-    <div class="price-grid">
-      <div class="pc fu">
-        <div class="plan-name">Starter</div>
-        <div class="plan-sub">Perfect for small businesses</div>
-        <div class="plan-quote">Custom Quote</div>
-        <div class="plan-quote-sub">Tailored to your call volume &amp; needs</div>
-        <ul class="plan-f">
-          <li>Up to 1,000 calls/month</li>
-          <li>Basic inbound &amp; outbound calling</li>
-          <li>Standard voice persona</li>
-          <li>Custom call scripts</li>
-          <li>Call recordings &amp; transcripts</li>
-          <li>Email support</li>
-          <li>Basic analytics dashboard</li>
-        </ul>
-        <button class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('contact')">Get Started</button>
-      </div>
-      <div class="pc feat fu">
-        <div class="pop">Most Popular</div>
-        <div class="plan-name">Growth</div>
-        <div class="plan-sub">For scaling teams</div>
-        <div class="plan-quote">Custom Quote</div>
-        <div class="plan-quote-sub">Tailored to your call volume &amp; needs</div>
-        <ul class="plan-f">
-          <li>Up to 10,000 calls/month</li>
-          <li>Multi-agent setup</li>
-          <li>CRM Integration (Salesforce, HubSpot)</li>
-          <li>Lead qualification &amp; scoring</li>
-          <li>Custom call scripts</li>
-          <li>Priority support</li>
-          <li>Advanced analytics &amp; sentiment</li>
-          <li>Multi-language support</li>
-        </ul>
-        <button class="btn btn-fill" style="width:100%;justify-content:center;" onclick="showPage('contact')">Get Started</button>
-      </div>
-      <div class="pc fu">
-        <div class="plan-name">Enterprise</div>
-        <div class="plan-sub">For large-scale operations</div>
-        <div class="plan-quote">Custom Quote</div>
-        <div class="plan-quote-sub">Tailored to your call volume &amp; needs</div>
-        <ul class="plan-f">
-          <li>Unlimited calls/month</li>
-          <li>Custom voice personas &amp; branding</li>
-          <li>Dedicated infrastructure</li>
-          <li>SLA guarantee (99.9% uptime)</li>
-          <li>24/7 dedicated support</li>
-          <li>Custom AI model training</li>
-          <li>White-label option</li>
-          <li>On-premise deployment available</li>
-        </ul>
-        <button class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('contact')">Contact Sales</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- DOCUMENT MONITORING PRICING -->
-  <section class="sec-alt-bg" style="padding:60px 5vw 80px;">
-    <div class="price-group-hd">
-      <div class="chip" style="background:var(--violet2);color:var(--violet);border-color:rgba(139,111,255,.3);"><div class="chip-dot" style="background:var(--violet);"></div>Document Monitoring System</div>
-      <p style="color:var(--muted);margin-top:10px;font-size:.9rem;">AI-powered document intelligence for teams and enterprises</p>
-    </div>
-    <div class="price-grid">
-      <div class="pc fu">
-        <div class="plan-name">Basic</div>
-        <div class="plan-sub">For individuals &amp; small teams</div>
-        <div class="plan-quote" style="color:var(--violet);">Custom Quote</div>
-        <div class="plan-quote-sub">Tailored to your document volume &amp; needs</div>
-        <ul class="plan-f">
-          <li>Up to 10,000 documents</li>
-          <li>Single-user access</li>
-          <li>Local folder monitoring</li>
-          <li>Basic Q&amp;A with documents</li>
-          <li>PDF, Word, TXT support</li>
-          <li>Email support</li>
-        </ul>
-        <button class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('contact')">Get Started</button>
-      </div>
-      <div class="pc feat fu" style="border-color:var(--violet);box-shadow:0 0 0 1px var(--violet),var(--shadow-c);">
-        <div class="pop" style="background:var(--violet);">Recommended</div>
-        <div class="plan-name">Professional</div>
-        <div class="plan-sub">For growing teams</div>
-        <div class="plan-quote" style="color:var(--violet);">Custom Quote</div>
-        <div class="plan-quote-sub">Tailored to your document volume &amp; needs</div>
-        <ul class="plan-f">
-          <li>Up to 100,000 documents</li>
-          <li>Team access (up to 35 users)</li>
-          <li>Advanced natural language search</li>
-          <li>API access for integrations</li>
-          <li>All file formats supported</li>
-          <li>Version tracking &amp; history</li>
-          <li>Priority support</li>
-          <li>Bulk export &amp; reports</li>
-        </ul>
-        <button class="btn btn-fill" style="width:100%;justify-content:center;background:var(--violet);" onclick="showPage('contact')">Get Started</button>
-      </div>
-      <div class="pc fu">
-        <div class="plan-name">Enterprise</div>
-        <div class="plan-sub">For large organisations</div>
-        <div class="plan-quote" style="color:var(--violet);">Custom Quote</div>
-        <div class="plan-quote-sub">Tailored to your document volume &amp; needs</div>
-        <ul class="plan-f">
-          <li>Unlimited documents</li>
-          <li>Unlimited users</li>
-          <li>Custom deployment options</li>
-          <li>On-premise installation</li>
-          <li>Dedicated support team</li>
-          <li>Custom AI model fine-tuning</li>
-          <li>Advanced security &amp; compliance</li>
-          <li>SLA guarantee</li>
-        </ul>
-        <button class="btn btn-outline" style="width:100%;justify-content:center;" onclick="showPage('contact')">Contact Sales</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- MYGATE PRICING — COMING SOON -->
-  <section style="padding:60px 5vw 80px;">
-    <div style="position:relative;border-radius:20px;overflow:hidden;">
-      <div style="opacity:.2;filter:blur(5px);pointer-events:none;">
-        <div class="price-group-hd">
-          <div class="chip" style="background:var(--amberglow);color:var(--amber);border-color:rgba(255,184,48,.3);"><div class="chip-dot" style="background:var(--amber);animation:csPulse 1.8s infinite;"></div>My Gate App</div>
-          <p style="color:var(--muted);margin-top:10px;font-size:.9rem;">Smart visitor management for housing societies</p>
-        </div>
-        <div class="price-grid">
-          <div class="pc">
-            <div class="plan-name">Society Starter</div>
-            <div class="plan-sub">For small residential communities</div>
-            <div class="plan-quote" style="color:var(--amber);">Custom Quote</div>
-            <div class="plan-quote-sub">Tailored to your society size</div>
-            <ul class="plan-f">
-              <li>Up to 50 residential units</li>
-              <li>Basic visitor management</li>
-              <li>Mobile app for residents</li>
-              <li>Guard dashboard (1 gate)</li>
-              <li>Visitor history (30 days)</li>
-            </ul>
-            <button class="btn btn-outline" style="width:100%;justify-content:center;">Coming Soon</button>
-          </div>
-          <div class="pc feat" style="border-color:var(--amber);box-shadow:0 0 0 1px var(--amber);">
-            <div class="pop" style="background:var(--amber);color:#fff;">Best Value</div>
-            <div class="plan-name">Society Pro</div>
-            <div class="plan-sub">For mid-size societies</div>
-            <div class="plan-quote" style="color:var(--amber);">Custom Quote</div>
-            <div class="plan-quote-sub">Tailored to your society size</div>
-            <ul class="plan-f">
-              <li>Up to 300 residential units</li>
-              <li>Full visitor management suite</li>
-              <li>Delivery &amp; pre-approvals</li>
-              <li>Multiple gate support</li>
-              <li>Visitor history (1 year)</li>
-              <li>Society admin panel</li>
-            </ul>
-            <button class="btn btn-fill" style="width:100%;justify-content:center;background:var(--amber);color:#fff;">Coming Soon</button>
-          </div>
-          <div class="pc">
-            <div class="plan-name">Society Enterprise</div>
-            <div class="plan-sub">For large societies &amp; townships</div>
-            <div class="plan-quote" style="color:var(--amber);">Custom Quote</div>
-            <div class="plan-quote-sub">Tailored to your society size</div>
-            <ul class="plan-f">
-              <li>500+ residential units</li>
-              <li>Multi-building &amp; township support</li>
-              <li>Emergency alerts system</li>
-              <li>White-label option</li>
-              <li>Dedicated support</li>
-              <li>Custom integrations</li>
-            </ul>
-            <button class="btn btn-outline" style="width:100%;justify-content:center;">Contact Sales</button>
-          </div>
-        </div>
-      </div>
-      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:var(--cs-overlay);backdrop-filter:blur(5px);border-radius:20px;padding:40px;">
-        <div class="cs-badge" style="font-size:.85rem;padding:9px 24px;"><div class="cs-badge-dot"></div>COMING SOON</div>
-        <div style="font-size:.9rem;color:var(--cs-badge-text);text-align:center;max-width:400px;line-height:1.7;opacity:.9;">The App is currently in final development. Pricing will be announced at launch. Join the waitlist for early access.</div>
-        <button class="btn" style="margin-top:4px;background:var(--cs-badge-bg);color:var(--cs-badge-text);border:1px solid var(--cs-badge-bor);" onclick="showPage('contact')">Join Waitlist →</button>
-      </div>
-    </div>
-  </section>
-
-  <div class="cta-band">
-    <div class="sec-tag" style="display:inline-block;margin-bottom:14px">Custom Quote</div>
-    <h2>Every Price is <span class="hl">Built for You</span></h2>
-    <p>No rigid tiers. Tell us what you need, and our team will design the right solution and pricing that fits your business — zero surprises.</p>
-    <div class="cta-btns">
-      <button class="btn btn-fill" onclick="showPage('contact')">Schedule a Consultation →</button>
-      <button class="btn btn-outline" onclick="showPage('products')">Explore Solutions</button>
-    </div>
-  </div>
-
-  <footer>
-    <div class="fg">
-      <div class="fb"><div class="logo" onclick="showPage('home')" style="margin-bottom:0"><div class="logo-mark" style="width:32px;height:32px;border-radius:8px;margin-right:8px;display:flex;align-items:center;justify-content:center;overflow:visible;"><svg width="32" height="32" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <defs> <linearGradient id="wt_g" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" stop-color="#00DCFF"/> <stop offset="55%" stop-color="#8B6FFF"/> <stop offset="100%" stop-color="#FF6B9D"/> </linearGradient> <filter id="wt_gw" x="-30%" y="-30%" width="160%" height="160%"> <feGaussianBlur stdDeviation="3.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <filter id="wt_nw" x="-80%" y="-80%" width="260%" height="260%"> <feGaussianBlur stdDeviation="2.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <radialGradient id="wt_bg" cx="50%" cy="50%" r="50%"> <stop offset="0%" stop-color="#0B0D1A"/> <stop offset="100%" stop-color="#05060F"/> </radialGradient> <clipPath id="wt_c"><circle cx="100" cy="100" r="94"/></clipPath> </defs> <circle cx="100" cy="100" r="95" fill="url(#wt_bg)"/> <circle cx="100" cy="100" r="92" stroke="url(#wt_g)" stroke-width="1" fill="none" opacity="0.4"/> <g clip-path="url(#wt_c)" opacity="0.18" stroke="#00DCFF" stroke-width="0.9" fill="none"> <line x1="36" y1="56" x2="62" y2="72"/> <line x1="164" y1="56" x2="138" y2="72"/> <line x1="75" y1="128" x2="50" y2="150"/> <line x1="125" y1="128" x2="150" y2="150"/> <line x1="100" y1="112" x2="100" y2="152"/> <line x1="36" y1="56" x2="100" y2="48"/> <line x1="164" y1="56" x2="100" y2="48"/> </g> <path d="M 62 72 L 75 128 L 100 104 L 125 128 L 138 72" stroke="url(#wt_g)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#wt_gw)"/> <line x1="55" y1="72" x2="145" y2="72" stroke="url(#wt_g)" stroke-width="2.5" stroke-linecap="round" opacity="0.38"/> <circle cx="36" cy="56" r="5" fill="#00DCFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="36" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="164" cy="56" r="5" fill="#8B6FFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="164" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="50" cy="150" r="4.5" fill="#00DCFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="50" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="150" cy="150" r="4.5" fill="#8B6FFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="150" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="100" cy="152" r="5" fill="#AAFF57" opacity="0.88" filter="url(#wt_nw)"/> <circle cx="100" cy="152" r="2.2" fill="#fff" opacity="0.92"/> <circle cx="62" cy="72" r="3.2" fill="#00DCFF" opacity="0.92"/> <circle cx="138" cy="72" r="3.2" fill="#8B6FFF" opacity="0.92"/> <circle cx="100" cy="104" r="3.5" fill="#AAFF57" opacity="0.95"/> <circle cx="75" cy="128" r="2.8" fill="#00DCFF" opacity="0.72"/> <circle cx="125" cy="128" r="2.8" fill="#8B6FFF" opacity="0.72"/> </svg></div>Welt<em>tos</em></div><p>AI & Tech solutions for modern Indian businesses. Built in India 🇮🇳</p></div>
-      <div class="fc"><h4>Solutions</h4><ul><li><a onclick="showPage('products')">Voice AI Agents</a></li><li><a onclick="showPage('products')">Document Monitoring</a></li><li><a onclick="showPage('products')">MyGate App</a></li></ul></div>
-      <div class="fc"><h4>Company</h4><ul><li><a onclick="showPage('about')">About Us</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-    </div>
-  </footer>
-</div>
-<!-- ════════════════════════════════
-     ABOUT PAGE
-════════════════════════════════ -->
-<div id="page-about" class="page">
-
-  <section style="padding:100px 5vw 60px;">
-    <div class="sec-tag">About Welttos</div>
-    <h2>We Build <span class="hl">Solutions</span> That Actually Work</h2>
-    <p class="sec-sub">Welttos is an AI & technology company headquartered in Pimpri-Chinchwad, Pune. We deliver intelligent solutions for the future of businesses.</p>
-  </section>
-
-  <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1400&q=80&fit=crop" alt="Welttos Team" style="width:calc(100% - 10vw);margin:0 5vw 50px;border-radius:20px;height:360px;object-fit:cover;border:1px solid var(--border);display:block;" loading="lazy"/>
-
-  <section class="sec-alt-bg">
-    <div class="sec-hd"><div class="sec-tag">Our Mission</div><h2>Bridging the Gap Between AI Research and Business Reality</h2></div>
-    <div class="f-grid">
-      <div class="f-card fu"><div class="f-icon">🚀</div><h3>Move Fast</h3><p>We ship weekly. Customers get new capabilities before they know they need them. Velocity is a feature, not a side effect.</p></div>
-      <div class="f-card fu"><div class="f-icon">🤝</div><h3>Customer Obsessed</h3><p>Every product decision starts with a customer conversation. We measure success by your outcomes, not our metrics.</p></div>
-      <div class="f-card fu"><div class="f-icon">🔬</div><h3>Research Driven</h3><p>Our core team includes experts in speech synthesis and NLP. Academic rigour meets commercial execution.</p></div>
-      <div class="f-card fu"><div class="f-icon">🛡️</div><h3>Security First</h3><p>DPDP Act 2023, GDPR, and HIPAA compliant. Your data never leaves your control without your explicit permission.</p></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="sec-hd"><div class="sec-tag">Leadership</div><h2>The Team Behind <span class="hl">Welttos</span></h2></div>
-    <div class="team-grid">
-      <div class="tm fu"><div class="tm-av" style="background:linear-gradient(135deg,#00DCFF,#8B6FFF)">KP</div><div class="tm-name">Kunal Pamu</div></div>
-      <div class="tm fu"><div class="tm-av" style="background:linear-gradient(135deg,#A78BFF,#EC4899)">PP</div><div class="tm-name">Prasadd Pamu</div></div>
-      <div class="tm fu"><div class="tm-av" style="background:linear-gradient(135deg,#FF6B6B,#FFB347)">RV</div><div class="tm-name">Rahul Varma</div></div>
-      <div class="tm fu"><div class="tm-av" style="background:linear-gradient(135deg,#AAFF57,#00DCFF)">PD</div><div class="tm-name">Priyanka Desai</div></div>
-    </div>
-  </section>
-
-  <div class="cta-band">
-    <h2>Want to Join <span class="hl">Welttos?</span></h2>
-    <p>We're hiring across engineering, product, and sales. Come build tomorrow's AI with us.</p>
-    <div class="cta-btns"><button class="btn btn-fill" onclick="showPage('contact')">Get in Touch →</button></div>
-  </div>
-
-  <footer>
-    <div class="fg">
-      <div class="fb"><div class="logo" onclick="showPage('home')" style="margin-bottom:0"><div class="logo-mark" style="width:32px;height:32px;border-radius:8px;margin-right:8px;display:flex;align-items:center;justify-content:center;overflow:visible;"><svg width="32" height="32" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <defs> <linearGradient id="wt_g" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" stop-color="#00DCFF"/> <stop offset="55%" stop-color="#8B6FFF"/> <stop offset="100%" stop-color="#FF6B9D"/> </linearGradient> <filter id="wt_gw" x="-30%" y="-30%" width="160%" height="160%"> <feGaussianBlur stdDeviation="3.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <filter id="wt_nw" x="-80%" y="-80%" width="260%" height="260%"> <feGaussianBlur stdDeviation="2.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <radialGradient id="wt_bg" cx="50%" cy="50%" r="50%"> <stop offset="0%" stop-color="#0B0D1A"/> <stop offset="100%" stop-color="#05060F"/> </radialGradient> <clipPath id="wt_c"><circle cx="100" cy="100" r="94"/></clipPath> </defs> <circle cx="100" cy="100" r="95" fill="url(#wt_bg)"/> <circle cx="100" cy="100" r="92" stroke="url(#wt_g)" stroke-width="1" fill="none" opacity="0.4"/> <g clip-path="url(#wt_c)" opacity="0.18" stroke="#00DCFF" stroke-width="0.9" fill="none"> <line x1="36" y1="56" x2="62" y2="72"/> <line x1="164" y1="56" x2="138" y2="72"/> <line x1="75" y1="128" x2="50" y2="150"/> <line x1="125" y1="128" x2="150" y2="150"/> <line x1="100" y1="112" x2="100" y2="152"/> <line x1="36" y1="56" x2="100" y2="48"/> <line x1="164" y1="56" x2="100" y2="48"/> </g> <path d="M 62 72 L 75 128 L 100 104 L 125 128 L 138 72" stroke="url(#wt_g)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#wt_gw)"/> <line x1="55" y1="72" x2="145" y2="72" stroke="url(#wt_g)" stroke-width="2.5" stroke-linecap="round" opacity="0.38"/> <circle cx="36" cy="56" r="5" fill="#00DCFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="36" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="164" cy="56" r="5" fill="#8B6FFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="164" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="50" cy="150" r="4.5" fill="#00DCFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="50" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="150" cy="150" r="4.5" fill="#8B6FFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="150" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="100" cy="152" r="5" fill="#AAFF57" opacity="0.88" filter="url(#wt_nw)"/> <circle cx="100" cy="152" r="2.2" fill="#fff" opacity="0.92"/> <circle cx="62" cy="72" r="3.2" fill="#00DCFF" opacity="0.92"/> <circle cx="138" cy="72" r="3.2" fill="#8B6FFF" opacity="0.92"/> <circle cx="100" cy="104" r="3.5" fill="#AAFF57" opacity="0.95"/> <circle cx="75" cy="128" r="2.8" fill="#00DCFF" opacity="0.72"/> <circle cx="125" cy="128" r="2.8" fill="#8B6FFF" opacity="0.72"/> </svg></div>Welt<em>tos</em></div><p>AI & Tech solutions for modern Indian businesses. Built in India 🇮🇳</p></div>
-      <div class="fc"><h4>Solutions</h4><ul><li><a onclick="showPage('products')">Voice AI Agents</a></li><li><a onclick="showPage('products')">Document Monitoring</a></li><li><a onclick="showPage('products')">MyGate App</a></li></ul></div>
-      <div class="fc"><h4>Company</h4><ul><li><a onclick="showPage('about')">About Us</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-    </div>
-  </footer>
-</div>
-
-<!-- ════════════════════════════════
-     CONTACT PAGE
-════════════════════════════════ -->
-<div id="page-contact" class="page">
-  <section style="padding:80px 5vw 36px;">
-    <div class="sec-tag">Contact Us</div>
-    <h2>Let's Build <span class="hl">Something Together</span></h2>
-    <p class="sec-sub">Demo request, technical question, or ready to deploy — we respond within 2 business hours.</p>
-  </section>
-  <section style="padding:16px 5vw 90px;">
-    <div class="ctc-grid">
-      <div class="ctc-info fu" style="background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:32px;">
-        <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--text);margin-bottom:20px">Reach Us</h3>
-        <div class="ctc-item"><div class="ctc-icon">📧</div><div><div class="ctc-lbl">Email</div><div class="ctc-val">info@welttos.com</div></div></div>
-        <div class="ctc-item"><div class="ctc-icon">📞</div><div><div class="ctc-lbl">Phone</div><div class="ctc-val">+91 8975655663</div></div></div>
-        <div class="ctc-item"><div class="ctc-icon">📍</div><div><div class="ctc-lbl">Headquarters</div><div class="ctc-val">59/1, Sai Industrial Area, Chovisawadi, Moshi<br>Pune, Maharashtra 412105</div></div></div>
-        <div class="ctc-item"><div class="ctc-icon">🕐</div><div><div class="ctc-lbl">Business Hours</div><div class="ctc-val">Mon–Sat, 9:00 AM – 7:00 PM IST</div></div></div>
-        <div style="margin-top:20px;padding:22px;background:var(--bg);border:1px solid var(--borderc);border-radius:14px">
-          <div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">What Happens Next</div>
-          <div style="display:flex;flex-direction:column;gap:12px">
-            <div style="display:flex;gap:10px;font-size:.84rem;color:var(--text2)"><div style="color:var(--primary);font-weight:700;flex-shrink:0;font-family:'Space Grotesk',sans-serif">01</div>We review your submission within 2 business hours.</div>
-            <div style="display:flex;gap:10px;font-size:.84rem;color:var(--text2)"><div style="color:var(--primary);font-weight:700;flex-shrink:0;font-family:'Space Grotesk',sans-serif">02</div>A solutions engineer schedules a personalised 30-min product demo.</div>
-            <div style="display:flex;gap:10px;font-size:.84rem;color:var(--text2)"><div style="color:var(--primary);font-weight:700;flex-shrink:0;font-family:'Space Grotesk',sans-serif">03</div>We configure a pilot for your use case.</div>
-          </div>
-        </div>
-      </div>
-      <div class="fu">
-        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:32px">
-          <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;margin-bottom:24px;color:var(--text)">Send a Message</h3>
-          <form action="https://formspree.io/f/mrevzdjo" method="POST">
-            <div class="fr">
-              <div><label>First Name *</label><input type="text" placeholder="Rahul" name="firstName" required/></div>
-              <div><label>Last Name *</label><input type="text" placeholder="Sharma" name="lastName" required/></div>
-            </div>
-            <div><label>Work Email *</label><input type="email" placeholder="rahul@company.com" name="email" required/></div>
-            <div><label>Phone</label><input type="tel" placeholder="+91 98765 43210" name="phone"/></div>
-            <div><label>Company *</label><input type="text" placeholder="Your Company Pvt. Ltd." name="company" required/></div>
-            <div><label>Solution Interest</label>
-              <select name="solution">
-                <option>— Select a solution —</option>
-                <option>AI Voice Calling Agents</option>
-                <option>Document Monitoring System</option>
-                <option>MyGate App (Waitlist)</option>
-                <option>All Three Solutions</option>
-                <option>Enterprise / Custom</option>
-                <option>Partnership / Reseller</option>
-              </select>
-            </div>
-            <div><label>Organisation Size</label>
-              <select name="organisationSize">
-                <option>— Select size —</option>
-                <option>1–10 people</option>
-                <option>10–100 people</option>
-                <option>100–1,000 people</option>
-                <option>1,000+ people</option>
-              </select>
-            </div>
-            <div><label>Message</label><textarea placeholder="Tell us about your use case, current challenges, or specific requirements…" name="message"></textarea></div>
-            <button type="submit" class="btn btn-fill" style="width:100%;justify-content:center;margin-top:6px">Send Message →</button>
-          </form>
-          <div id="form-ok" style="display:none;text-align:center;padding:28px 0">
-            <div style="font-size:2.8rem;margin-bottom:14px">✅</div>
-            <h3 style="color:var(--lime);font-family:'Space Grotesk',sans-serif;margin-bottom:8px">Message Sent!</h3>
-            <p style="color:var(--muted);font-size:.86rem">Thanks for reaching out. Our team will reply within 2 business hours.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="fg">
-      <div class="fb"><div class="logo" onclick="showPage('home')" style="margin-bottom:0"><div class="logo-mark" style="width:32px;height:32px;border-radius:8px;margin-right:8px;display:flex;align-items:center;justify-content:center;overflow:visible;"><svg width="32" height="32" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg"> <defs> <linearGradient id="wt_g" x1="0%" y1="0%" x2="100%" y2="100%"> <stop offset="0%" stop-color="#00DCFF"/> <stop offset="55%" stop-color="#8B6FFF"/> <stop offset="100%" stop-color="#FF6B9D"/> </linearGradient> <filter id="wt_gw" x="-30%" y="-30%" width="160%" height="160%"> <feGaussianBlur stdDeviation="3.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <filter id="wt_nw" x="-80%" y="-80%" width="260%" height="260%"> <feGaussianBlur stdDeviation="2.5" result="b"/> <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge> </filter> <radialGradient id="wt_bg" cx="50%" cy="50%" r="50%"> <stop offset="0%" stop-color="#0B0D1A"/> <stop offset="100%" stop-color="#05060F"/> </radialGradient> <clipPath id="wt_c"><circle cx="100" cy="100" r="94"/></clipPath> </defs> <circle cx="100" cy="100" r="95" fill="url(#wt_bg)"/> <circle cx="100" cy="100" r="92" stroke="url(#wt_g)" stroke-width="1" fill="none" opacity="0.4"/> <g clip-path="url(#wt_c)" opacity="0.18" stroke="#00DCFF" stroke-width="0.9" fill="none"> <line x1="36" y1="56" x2="62" y2="72"/> <line x1="164" y1="56" x2="138" y2="72"/> <line x1="75" y1="128" x2="50" y2="150"/> <line x1="125" y1="128" x2="150" y2="150"/> <line x1="100" y1="112" x2="100" y2="152"/> <line x1="36" y1="56" x2="100" y2="48"/> <line x1="164" y1="56" x2="100" y2="48"/> </g> <path d="M 62 72 L 75 128 L 100 104 L 125 128 L 138 72" stroke="url(#wt_g)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#wt_gw)"/> <line x1="55" y1="72" x2="145" y2="72" stroke="url(#wt_g)" stroke-width="2.5" stroke-linecap="round" opacity="0.38"/> <circle cx="36" cy="56" r="5" fill="#00DCFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="36" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="164" cy="56" r="5" fill="#8B6FFF" opacity="0.92" filter="url(#wt_nw)"/> <circle cx="164" cy="56" r="2.2" fill="#fff" opacity="0.9"/> <circle cx="50" cy="150" r="4.5" fill="#00DCFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="50" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="150" cy="150" r="4.5" fill="#8B6FFF" opacity="0.78" filter="url(#wt_nw)"/> <circle cx="150" cy="150" r="2" fill="#fff" opacity="0.88"/> <circle cx="100" cy="152" r="5" fill="#AAFF57" opacity="0.88" filter="url(#wt_nw)"/> <circle cx="100" cy="152" r="2.2" fill="#fff" opacity="0.92"/> <circle cx="62" cy="72" r="3.2" fill="#00DCFF" opacity="0.92"/> <circle cx="138" cy="72" r="3.2" fill="#8B6FFF" opacity="0.92"/> <circle cx="100" cy="104" r="3.5" fill="#AAFF57" opacity="0.95"/> <circle cx="75" cy="128" r="2.8" fill="#00DCFF" opacity="0.72"/> <circle cx="125" cy="128" r="2.8" fill="#8B6FFF" opacity="0.72"/> </svg></div>Welt<em>tos</em></div><p>AI & Tech solutions for modern Indian businesses. Built in India 🇮🇳</p></div>
-      <div class="fc"><h4>Solutions</h4><ul><li><a onclick="showPage('products')">Voice AI Agents</a></li><li><a onclick="showPage('products')">Document Monitoring</a></li><li><a onclick="showPage('products')">MyGate App</a></li></ul></div>
-      <div class="fc"><h4>Company</h4><ul><li><a onclick="showPage('about')">About Us</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-    </div>
-  </footer>
-</div>
-<!-- ═══════════════════ SCRIPTS ═══════════════════ -->
-<script>
-function getTheme(){ return document.documentElement.getAttribute('data-theme') || 'dark'; }
-function isDark(){ return getTheme() === 'dark'; }
-function toggleTheme(){
-  const next = isDark() ? 'light' : 'dark';
-  document.documentElement.setAttribute('data-theme', next);
-  localStorage.setItem('wt-theme', next);
-  document.getElementById('theme-icon').textContent = next === 'dark' ? '🌙' : '☀️';
-}
-(function(){
-  const saved = localStorage.getItem('wt-theme') || 'dark';
-  document.documentElement.setAttribute('data-theme', saved);
-  document.addEventListener('DOMContentLoaded', () => {
-    const icon = document.getElementById('theme-icon');
-    if(icon) icon.textContent = saved === 'dark' ? '🌙' : '☀️';
-  });
-})();
-
-(function(){
-  const canvas = document.getElementById('bg-canvas');
-  const ctx = canvas.getContext('2d');
-  let W, H, nodes = [];
-  const N = 90;
-  const DARK = { nodePrimary:{r:0,g:220,b:255}, nodeSecondary:{r:139,g:111,b:255}, nodeAccent:{r:0,g:255,b:160}, lineColor:'rgba(0,220,255,', lineAlpha:0.28, nodeAlpha:0.75, scanColor:'rgba(0,220,255,', scanAlpha:0.055, charColor:'rgba(0,220,255,', charAlpha:0.22 };
-  const LIGHT = { nodePrimary:{r:67,g:56,b:202}, nodeSecondary:{r:124,g:58,b:237}, nodeAccent:{r:5,g:150,b:105}, lineColor:'rgba(67,56,202,', lineAlpha:0.30, nodeAlpha:0.82, scanColor:'rgba(67,56,202,', scanAlpha:0.045, charColor:'rgba(67,56,202,', charAlpha:0.18 };
-  function getT(){ return isDark() ? DARK : LIGHT; }
-  function resize(){ W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
-  window.addEventListener('resize', resize); resize();
-  function randColor(t){ const p=Math.random(); if(p<0.45)return t.nodePrimary; if(p<0.78)return t.nodeSecondary; return t.nodeAccent; }
-  function initNodes(){ nodes=[]; const t=getT(); for(let i=0;i<N;i++) nodes.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.4,vy:(Math.random()-.5)*.4,r:Math.random()*.8+0.8,cr:randColor(t)}); }
-  initNodes();
-  const CHARS=['0','1','AI','∇','σ','λ','⊕','∑','ML','NN','→','∫','π','10','01'];
-  const floats=[];
-  for(let i=0;i<20;i++) floats.push({x:Math.random()*1920,y:Math.random()*1080,vy:-(Math.random()*.45+.12),char:CHARS[Math.floor(Math.random()*CHARS.length)],size:Math.random()*9+8});
-  function draw(){
-    const t=getT(); ctx.clearRect(0,0,W,H);
-    for(let i=0;i<nodes.length;i++) for(let j=i+1;j<nodes.length;j++){const dx=nodes[i].x-nodes[j].x,dy=nodes[i].y-nodes[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<150){ctx.beginPath();ctx.strokeStyle=t.lineColor+((1-d/150)*t.lineAlpha)+')';ctx.lineWidth=(1-d/150)*0.8;ctx.moveTo(nodes[i].x,nodes[i].y);ctx.lineTo(nodes[j].x,nodes[j].y);ctx.stroke();}}
-    nodes.forEach(n=>{const {r,g,b}=n.cr;ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,Math.PI*2);ctx.fillStyle=`rgba(${r},${g},${b},${t.nodeAlpha})`;ctx.fill();n.x+=n.vx;n.y+=n.vy;if(n.x<0||n.x>W)n.vx*=-1;if(n.y<0||n.y>H)n.vy*=-1;});
-    floats.forEach(f=>{ctx.font=`${f.size}px 'JetBrains Mono',monospace`;ctx.fillStyle=t.charColor+t.charAlpha+')';ctx.fillText(f.char,f.x%W,f.y);f.y+=f.vy;if(f.y<-20){f.y=H+10;f.x=Math.random()*W;}});
-    const now=Date.now(),sy=(now%5500)/5500*H,sg=ctx.createLinearGradient(0,sy-28,0,sy+28);
-    sg.addColorStop(0,t.scanColor+'0)');sg.addColorStop(0.5,t.scanColor+t.scanAlpha+')');sg.addColorStop(1,t.scanColor+'0)');
-    ctx.fillStyle=sg;ctx.fillRect(0,sy-28,W,56);
-    requestAnimationFrame(draw);
-  }
-  new MutationObserver(()=>{ const t2=getT(); nodes.forEach(n=>{n.cr=randColor(t2);}); }).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
-  draw();
-})();
-
-function showPage(id){
-  const cur=document.querySelector('.page.active');
-  const nxt=document.getElementById('page-'+id);
-  if(!nxt||nxt===cur)return;
-  if(cur){cur.classList.add('page-exit');setTimeout(()=>cur.classList.remove('active','page-exit'),280);}
-  setTimeout(()=>{nxt.classList.add('active','page-enter');requestAnimationFrame(()=>requestAnimationFrame(()=>nxt.classList.remove('page-enter')));},cur?140:0);
-  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
-  const nav=document.getElementById('nav-'+id);
-  if(nav)nav.classList.add('active');
-  window.scrollTo({top:0,behavior:'instant'});
-  setTimeout(initObs,200);
-  setTimeout(initCounters,300);
-}
-
-function initObs(){
-  const obs=new IntersectionObserver((entries)=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){
-        const el=e.target;
-        const sibs=el.parentElement?[...el.parentElement.querySelectorAll('.fu')]:[el];
-        el.style.transitionDelay=(sibs.indexOf(el)*90)+'ms';
-        el.classList.add('vis');obs.unobserve(el);
-      }
-    });
-  },{threshold:.08,rootMargin:'0px 0px -40px 0px'});
-  document.querySelectorAll('.fu:not(.vis)').forEach(el=>obs.observe(el));
-}
-
-function animCtr(el){
-  const raw=el.dataset.target;if(!raw)return;
-  const target=parseFloat(raw),suffix=el.dataset.suffix||'',prefix=el.dataset.prefix||'';
-  const dur=1800,start=performance.now();
-  function step(now){const t=Math.min((now-start)/dur,1),ease=1-Math.pow(1-t,3);el.textContent=prefix+Math.round(target*ease)+suffix;if(t<1)requestAnimationFrame(step);}
-  requestAnimationFrame(step);
-}
-function initCounters(){
-  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting&&!e.target.dataset.counted){e.target.dataset.counted='1';animCtr(e.target);obs.unobserve(e.target);}});},{threshold:.5});
-  document.querySelectorAll('[data-target]').forEach(el=>obs.observe(el));
-}
-
-function toggleFaq(btn){
-  const item=btn.closest('.faq-i');
-  const open=item.classList.contains('open');
-  document.querySelectorAll('.faq-i.open').forEach(i=>i.classList.remove('open'));
-  if(!open)item.classList.add('open');
-}
-
-function initRipple(){
-  document.addEventListener('click',e=>{
-    const b=e.target.closest('.btn');if(!b)return;
-    const r=b.getBoundingClientRect(),sz=Math.max(r.width,r.height)*1.4;
-    const el=document.createElement('span');el.className='ripple';
-    el.style.cssText=`width:${sz}px;height:${sz}px;left:${e.clientX-r.left-sz/2}px;top:${e.clientY-r.top-sz/2}px;`;
-    b.appendChild(el);setTimeout(()=>el.remove(),600);
-  });
-}
-
-function initTyper(){
-  const phrases=['AI & Tech Solutions — Built for Real Results','Voice Agents that never sleep','Find any document in plain English','Smart gate access for housing societies','Deployed in Pune, scaling across India'];
-  const el=document.getElementById('badge-text');if(!el)return;
-  let pi=0,ci=0,del=false;
-  function tick(){
-    const ph=phrases[pi];
-    if(!del){el.textContent=ph.slice(0,++ci);if(ci===ph.length){del=true;setTimeout(tick,2600);return;}}
-    else{el.textContent=ph.slice(0,--ci);if(ci===0){del=false;pi=(pi+1)%phrases.length;}}
-    setTimeout(tick,del?26:44);
-  }
-  tick();
-}
-
-window.addEventListener('scroll',()=>{document.getElementById('main-nav').classList.toggle('compact',window.scrollY>55);},{passive:true});
-
-document.addEventListener('DOMContentLoaded',()=>{
-  initObs();initCounters();initRipple();initTyper();
-});
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
