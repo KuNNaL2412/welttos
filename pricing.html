@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Pricing — Welttos Technologies</title>
+<meta name="description" content="Flexible custom pricing for AI Voice Agents and Document Monitoring. No rigid tiers — built around your needs."/>
+<meta name="theme-color" content="#05060F"/>
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Pricing — Welttos Technologies"/>
+<meta property="og:description" content="Flexible custom pricing for AI Voice Agents and Document Monitoring. No rigid tiers — built around your needs."/>
+<meta property="og:image" content="assets/logo.svg"/>
+<meta property="og:site_name" content="Welttos Technologies"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Pricing — Welttos Technologies"/>
+<meta name="twitter:description" content="Flexible custom pricing for AI Voice Agents and Document Monitoring. No rigid tiers — built around your needs."/>
+<meta name="twitter:image" content="assets/logo.svg"/>
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav id="main-nav">
+  <a href="index.html" class="logo">
+    <div class="logo-mark"><img src="assets/logo.svg" alt="Welttos logo"/></div>
+    Welt<em>tos</em>
+  </a>
+
+  <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-sidebar">
+    <span class="hamburger-bars"><span></span></span>
+  </button>
+
+  <div class="nav-links" id="nav-sidebar">
+    <div class="sidebar-header">Navigation</div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="pricing.html" class="active">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav-cta">Get a Demo</a>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle light/dark theme">
+      <div class="theme-toggle-thumb" id="theme-icon">🌙</div>
+    </button>
+  </div>
+
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+</nav>
+
+<main>
+  <section class="pricing-hero">
+    <div class="chip" style="margin-bottom:20px;"><div class="chip-dot"></div>Flexible Pricing</div>
+    <h2>Pricing Built Around <span class="hl">Your Needs</span></h2>
+    <p class="sec-sub" style="margin:0 auto">Every business is different. Our pricing scales with your requirements — no hidden fees, no surprises.<br>All prices are custom-quoted based on your specific requirements and scale.</p>
+  </section>
+
+  <section class="sec-alt-bg" style="padding:60px 5vw 80px;">
+    <div class="price-group-hd">
+      <div class="chip"><div class="chip-dot"></div>AI Voice Calling Agents</div>
+      <p style="color:var(--muted);margin-top:10px;font-size:.9rem;">Scalable voice AI for businesses of all sizes</p>
+    </div>
+    <div class="price-grid">
+      <div class="pc fu">
+        <div class="plan-name">Starter</div>
+        <div class="plan-sub">Perfect for small businesses</div>
+        <div class="plan-quote">Custom Quote</div>
+        <div class="plan-quote-sub">Tailored to your call volume &amp; needs</div>
+        <ul class="plan-f">
+          <li>Up to 1,000 calls/month</li>
+          <li>Basic inbound &amp; outbound calling</li>
+          <li>Standard voice persona</li>
+          <li>Custom call scripts</li>
+          <li>Call recordings &amp; transcripts</li>
+          <li>Email support</li>
+          <li>Basic analytics dashboard</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+      <div class="pc feat fu">
+        <div class="pop">Most Popular</div>
+        <div class="plan-name">Growth</div>
+        <div class="plan-sub">For scaling teams</div>
+        <div class="plan-quote">Custom Quote</div>
+        <div class="plan-quote-sub">Tailored to your call volume &amp; needs</div>
+        <ul class="plan-f">
+          <li>Up to 10,000 calls/month</li>
+          <li>Multi-agent setup</li>
+          <li>CRM Integration (Salesforce, HubSpot)</li>
+          <li>Lead qualification &amp; scoring</li>
+          <li>Custom call scripts</li>
+          <li>Priority support</li>
+          <li>Advanced analytics &amp; sentiment</li>
+          <li>Multi-language support</li>
+        </ul>
+        <a href="contact.html" class="btn btn-fill" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+      <div class="pc fu">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-sub">For large-scale operations</div>
+        <div class="plan-quote">Custom Quote</div>
+        <div class="plan-quote-sub">Tailored to your call volume &amp; needs</div>
+        <ul class="plan-f">
+          <li>Unlimited calls/month</li>
+          <li>Custom voice personas &amp; branding</li>
+          <li>Dedicated infrastructure</li>
+          <li>SLA guarantee (99.9% uptime)</li>
+          <li>24/7 dedicated support</li>
+          <li>Custom AI model training</li>
+          <li>White-label option</li>
+          <li>On-premise deployment available</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding:60px 5vw 80px;">
+    <div class="price-group-hd">
+      <div class="chip" style="background:var(--violet2);color:var(--violet);border-color:rgba(139,111,255,.3);"><div class="chip-dot" style="background:var(--violet);"></div>Document Monitoring System</div>
+      <p style="color:var(--muted);margin-top:10px;font-size:.9rem;">AI-powered document intelligence for teams and enterprises</p>
+    </div>
+    <div class="price-grid">
+      <div class="pc fu">
+        <div class="plan-name">Basic</div>
+        <div class="plan-sub">For individuals &amp; small teams</div>
+        <div class="plan-quote" style="color:var(--violet);">Custom Quote</div>
+        <div class="plan-quote-sub">Tailored to your document volume &amp; needs</div>
+        <ul class="plan-f">
+          <li>Up to 10,000 documents</li>
+          <li>Single-user access</li>
+          <li>Local folder monitoring</li>
+          <li>Basic Q&amp;A with documents</li>
+          <li>PDF, Word, TXT support</li>
+          <li>Email support</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Get Started</a>
+      </div>
+      <div class="pc feat fu" style="border-color:var(--violet);box-shadow:0 0 0 1px var(--violet),var(--shadow-c);">
+        <div class="pop" style="background:var(--violet);">Recommended</div>
+        <div class="plan-name">Professional</div>
+        <div class="plan-sub">For growing teams</div>
+        <div class="plan-quote" style="color:var(--violet);">Custom Quote</div>
+        <div class="plan-quote-sub">Tailored to your document volume &amp; needs</div>
+        <ul class="plan-f">
+          <li>Up to 100,000 documents</li>
+          <li>Team access (up to 35 users)</li>
+          <li>Advanced natural language search</li>
+          <li>API access for integrations</li>
+          <li>All file formats supported</li>
+          <li>Version tracking &amp; history</li>
+          <li>Priority support</li>
+          <li>Bulk export &amp; reports</li>
+        </ul>
+        <a href="contact.html" class="btn btn-fill" style="width:100%;justify-content:center;background:var(--violet);">Get Started</a>
+      </div>
+      <div class="pc fu">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-sub">For large organisations</div>
+        <div class="plan-quote" style="color:var(--violet);">Custom Quote</div>
+        <div class="plan-quote-sub">Tailored to your document volume &amp; needs</div>
+        <ul class="plan-f">
+          <li>Unlimited documents</li>
+          <li>Unlimited users</li>
+          <li>Custom deployment options</li>
+          <li>On-premise installation</li>
+          <li>Dedicated support team</li>
+          <li>Custom AI model fine-tuning</li>
+          <li>Advanced security &amp; compliance</li>
+          <li>SLA guarantee</li>
+        </ul>
+        <a href="contact.html" class="btn btn-outline" style="width:100%;justify-content:center;">Contact Sales</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec-alt-bg" style="padding:60px 5vw 80px;">
+    <div style="position:relative;border-radius:20px;overflow:hidden;">
+      <div style="opacity:.2;filter:blur(5px);pointer-events:none;">
+        <div class="price-group-hd">
+          <div class="chip" style="background:var(--amberglow);color:var(--amber);border-color:rgba(255,184,48,.3);"><div class="chip-dot" style="background:var(--amber);"></div>MyGate App</div>
+          <p style="color:var(--muted);margin-top:10px;font-size:.9rem;">Smart visitor management for housing societies</p>
+        </div>
+        <div class="price-grid">
+          <div class="pc">
+            <div class="plan-name">Society Starter</div>
+            <div class="plan-sub">For small residential communities</div>
+            <div class="plan-quote" style="color:var(--amber);">Custom Quote</div>
+            <div class="plan-quote-sub">Tailored to your society size</div>
+            <ul class="plan-f">
+              <li>Up to 50 residential units</li>
+              <li>Basic visitor management</li>
+              <li>Mobile app for residents</li>
+              <li>Guard dashboard (1 gate)</li>
+              <li>Visitor history (30 days)</li>
+            </ul>
+            <button class="btn btn-outline" style="width:100%;justify-content:center;">Coming Soon</button>
+          </div>
+          <div class="pc feat" style="border-color:var(--amber);box-shadow:0 0 0 1px var(--amber);">
+            <div class="pop" style="background:var(--amber);color:#fff;">Best Value</div>
+            <div class="plan-name">Society Pro</div>
+            <div class="plan-sub">For mid-size societies</div>
+            <div class="plan-quote" style="color:var(--amber);">Custom Quote</div>
+            <div class="plan-quote-sub">Tailored to your society size</div>
+            <ul class="plan-f">
+              <li>Up to 300 residential units</li>
+              <li>Full visitor management suite</li>
+              <li>Delivery &amp; pre-approvals</li>
+              <li>Multiple gate support</li>
+              <li>Visitor history (1 year)</li>
+              <li>Society admin panel</li>
+            </ul>
+            <button class="btn btn-fill" style="width:100%;justify-content:center;background:var(--amber);color:#fff;">Coming Soon</button>
+          </div>
+          <div class="pc">
+            <div class="plan-name">Society Enterprise</div>
+            <div class="plan-sub">For large societies &amp; townships</div>
+            <div class="plan-quote" style="color:var(--amber);">Custom Quote</div>
+            <div class="plan-quote-sub">Tailored to your society size</div>
+            <ul class="plan-f">
+              <li>500+ residential units</li>
+              <li>Multi-building &amp; township support</li>
+              <li>Emergency alerts system</li>
+              <li>White-label option</li>
+              <li>Dedicated support</li>
+              <li>Custom integrations</li>
+            </ul>
+            <button class="btn btn-outline" style="width:100%;justify-content:center;">Contact Sales</button>
+          </div>
+        </div>
+      </div>
+      <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:var(--cs-overlay);backdrop-filter:blur(5px);border-radius:20px;padding:40px;">
+        <div class="cs-badge" style="font-size:.85rem;padding:9px 24px;"><div class="cs-badge-dot"></div>COMING SOON</div>
+        <div style="font-size:.9rem;color:var(--cs-badge-text);text-align:center;max-width:400px;line-height:1.7;opacity:.9;">The App is currently in final development. Pricing will be announced at launch. Join the waitlist for early access.</div>
+        <a href="contact.html" class="btn" style="margin-top:4px;background:var(--cs-badge-bg);color:var(--cs-badge-text);border:1px solid var(--cs-badge-bor);">Join Waitlist →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="sec-tag" style="display:inline-block;margin-bottom:14px">Custom Quote</div>
+    <h2>Every Price is <span class="hl">Built for You</span></h2>
+    <p>No rigid tiers. Tell us what you need, and our team will design the right solution and pricing that fits your business — zero surprises.</p>
+    <div class="cta-btns">
+      <a href="contact.html" class="btn btn-fill">Schedule a Consultation →</a>
+      <a href="products.html" class="btn btn-outline">Explore Solutions</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="fg">
+    <div class="fb">
+      <a href="index.html" class="logo" style="margin-bottom:0">
+        <div class="logo-mark logo-mark-sm"><img src="assets/logo.svg" alt="Welttos logo"/></div>
+        Welt<em>tos</em>
+      </a>
+      <p>AI &amp; Tech solutions for modern Indian businesses. Built in India 🇮🇳</p>
+    </div>
+    <div class="fc">
+      <h4>Solutions</h4>
+      <ul>
+        <li><a href="products.html">Voice AI Agents</a></li>
+        <li><a href="products.html">Document Monitoring</a></li>
+        <li><a href="products.html">MyGate App</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

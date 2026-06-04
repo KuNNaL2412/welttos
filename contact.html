@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact — Welttos Technologies</title>
+<meta name="description" content="Book a free demo or talk to our team. We respond within 2 business hours. Based in Pune, India."/>
+<meta name="theme-color" content="#05060F"/>
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Contact — Welttos Technologies"/>
+<meta property="og:description" content="Book a free demo or talk to our team. We respond within 2 business hours. Based in Pune, India."/>
+<meta property="og:image" content="assets/logo.svg"/>
+<meta property="og:site_name" content="Welttos Technologies"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Contact — Welttos Technologies"/>
+<meta name="twitter:description" content="Book a free demo or talk to our team. We respond within 2 business hours. Based in Pune, India."/>
+<meta name="twitter:image" content="assets/logo.svg"/>
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav id="main-nav">
+  <a href="index.html" class="logo">
+    <div class="logo-mark"><img src="assets/logo.svg" alt="Welttos logo"/></div>
+    Welt<em>tos</em>
+  </a>
+
+  <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-sidebar">
+    <span class="hamburger-bars"><span></span></span>
+  </button>
+
+  <div class="nav-links" id="nav-sidebar">
+    <div class="sidebar-header">Navigation</div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html" class="nav-cta">Get a Demo</a>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle light/dark theme">
+      <div class="theme-toggle-thumb" id="theme-icon">🌙</div>
+    </button>
+  </div>
+
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+</nav>
+
+<main>
+  <section style="padding:80px 5vw 36px;">
+    <div class="sec-tag">Contact Us</div>
+    <h2>Let's Build <span class="hl">Something Together</span></h2>
+    <p class="sec-sub">Demo request, technical question, or ready to deploy — we respond within 2 business hours.</p>
+  </section>
+
+  <section class="sec-alt-bg" style="padding:16px 5vw 90px;">
+    <div class="ctc-grid">
+      <div class="fu" style="background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:32px;">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;color:var(--text);margin-bottom:20px">Reach Us</h3>
+        <div class="ctc-item">
+          <div class="ctc-icon">📧</div>
+          <div><div class="ctc-lbl">Email</div><div class="ctc-val">info@welttos.com</div></div>
+        </div>
+        <div class="ctc-item">
+          <div class="ctc-icon">📞</div>
+          <div><div class="ctc-lbl">Phone</div><div class="ctc-val">+91 8975655663</div></div>
+        </div>
+        <div class="ctc-item">
+          <div class="ctc-icon">📍</div>
+          <div><div class="ctc-lbl">Headquarters</div><div class="ctc-val">59/1, Sai Industrial Area, Chovisawadi, Moshi<br>Pune, Maharashtra 412105</div></div>
+        </div>
+        <div class="ctc-item">
+          <div class="ctc-icon">🕐</div>
+          <div><div class="ctc-lbl">Business Hours</div><div class="ctc-val">Mon–Sat, 9:00 AM – 7:00 PM IST</div></div>
+        </div>
+
+        <div style="margin-top:20px;padding:22px;background:var(--bg);border:1px solid var(--borderc);border-radius:14px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--primary);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px">What Happens Next</div>
+          <div style="display:flex;flex-direction:column;gap:12px">
+            <div style="display:flex;gap:10px;font-size:.84rem;color:var(--text2)"><div style="color:var(--primary);font-weight:700;flex-shrink:0;font-family:'Space Grotesk',sans-serif">01</div>We review your submission within 2 business hours.</div>
+            <div style="display:flex;gap:10px;font-size:.84rem;color:var(--text2)"><div style="color:var(--primary);font-weight:700;flex-shrink:0;font-family:'Space Grotesk',sans-serif">02</div>A solutions engineer schedules a personalised 30-min product demo.</div>
+            <div style="display:flex;gap:10px;font-size:.84rem;color:var(--text2)"><div style="color:var(--primary);font-weight:700;flex-shrink:0;font-family:'Space Grotesk',sans-serif">03</div>We configure a pilot for your use case.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fu">
+        <div style="background:var(--bg3);border:1px solid var(--border);border-radius:20px;padding:32px">
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;margin-bottom:24px;color:var(--text)">Send a Message</h3>
+
+          <!-- AJAX form: handler in main.js prevents redirect and shows custom modal -->
+          <form id="contact-form" action="https://formspree.io/f/mrevzdjo" method="POST">
+            <div class="fr">
+              <div><label>First Name *</label><input type="text" placeholder="Rahul" name="firstName" required/></div>
+              <div><label>Last Name *</label><input type="text" placeholder="Sharma" name="lastName" required/></div>
+            </div>
+            <div><label>Work Email *</label><input type="email" placeholder="rahul@company.com" name="email" required/></div>
+            <div><label>Phone</label><input type="tel" placeholder="+91 98765 43210" name="phone"/></div>
+            <div><label>Company *</label><input type="text" placeholder="Your Company Pvt. Ltd." name="company" required/></div>
+            <div>
+              <label>Solution Interest</label>
+              <select name="solution">
+                <option>— Select a solution —</option>
+                <option>AI Voice Calling Agents</option>
+                <option>Document Monitoring System</option>
+                <option>MyGate App (Waitlist)</option>
+                <option>All Three Solutions</option>
+                <option>Enterprise / Custom</option>
+                <option>Partnership / Reseller</option>
+              </select>
+            </div>
+            <div>
+              <label>Organisation Size</label>
+              <select name="organisationSize">
+                <option>— Select size —</option>
+                <option>1–10 people</option>
+                <option>10–100 people</option>
+                <option>100–1,000 people</option>
+                <option>1,000+ people</option>
+              </select>
+            </div>
+            <div><label>Message</label><textarea placeholder="Tell us about your use case, current challenges, or specific requirements…" name="message"></textarea></div>
+            <button type="submit" class="btn btn-fill" style="width:100%;justify-content:center;margin-top:6px">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ════════════════════════════════
+     CUSTOM THANK-YOU MODAL
+════════════════════════════════ -->
+<div id="success-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()" aria-label="Close popup">✕</button>
+    <div class="modal-icon-wrap">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 6 9 17l-5-5"/>
+      </svg>
+    </div>
+    <h3 id="modal-title">Your Form Has Been Submitted!</h3>
+    <p>Thanks for reaching out to Welttos. Our team will review your message and get back to you within 2 business hours.</p>
+    <button class="btn btn-fill" onclick="closeModal()">Got it</button>
+  </div>
+</div>
+
+
+<footer>
+  <div class="fg">
+    <div class="fb">
+      <a href="index.html" class="logo" style="margin-bottom:0">
+        <div class="logo-mark logo-mark-sm"><img src="assets/logo.svg" alt="Welttos logo"/></div>
+        Welt<em>tos</em>
+      </a>
+      <p>AI &amp; Tech solutions for modern Indian businesses. Built in India 🇮🇳</p>
+    </div>
+    <div class="fc">
+      <h4>Solutions</h4>
+      <ul>
+        <li><a href="products.html">Voice AI Agents</a></li>
+        <li><a href="products.html">Document Monitoring</a></li>
+        <li><a href="products.html">MyGate App</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
