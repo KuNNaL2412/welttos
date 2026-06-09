@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <title>Welttos</title>
+  <defs>
+    <linearGradient id="wt_g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5C45"/>
+      <stop offset="55%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D946A8"/>
+    </linearGradient>
+    <filter id="wt_gw" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="wt_nw" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="wt_bg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2E1D1A"/>
+      <stop offset="100%" stop-color="#1A0F0D"/>
+    </radialGradient>
+    <clipPath id="wt_c"><circle cx="100" cy="100" r="94"/></clipPath>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#wt_bg)"/>
+  <circle cx="100" cy="100" r="92" stroke="url(#wt_g)" stroke-width="1" fill="none" opacity="0.4"/>
+  <g clip-path="url(#wt_c)" opacity="0.18" stroke="#FF5C45" stroke-width="0.9" fill="none">
+    <line x1="36" y1="56" x2="62" y2="72"/>
+    <line x1="164" y1="56" x2="138" y2="72"/>
+    <line x1="75" y1="128" x2="50" y2="150"/>
+    <line x1="125" y1="128" x2="150" y2="150"/>
+    <line x1="100" y1="112" x2="100" y2="152"/>
+    <line x1="36" y1="56" x2="100" y2="48"/>
+    <line x1="164" y1="56" x2="100" y2="48"/>
+  </g>
+  <path d="M 62 72 L 75 128 L 100 104 L 125 128 L 138 72" stroke="url(#wt_g)" stroke-width="9.5" stroke-linecap="round" stroke-linejoin="round" fill="none" filter="url(#wt_gw)"/>
+  <line x1="55" y1="72" x2="145" y2="72" stroke="url(#wt_g)" stroke-width="2.5" stroke-linecap="round" opacity="0.38"/>
+  <circle cx="36" cy="56" r="5" fill="#FF5C45" opacity="0.92" filter="url(#wt_nw)"/>
+  <circle cx="36" cy="56" r="2.2" fill="#fff" opacity="0.9"/>
+  <circle cx="164" cy="56" r="5" fill="#D946A8" opacity="0.92" filter="url(#wt_nw)"/>
+  <circle cx="164" cy="56" r="2.2" fill="#fff" opacity="0.9"/>
+  <circle cx="50" cy="150" r="4.5" fill="#FF5C45" opacity="0.78" filter="url(#wt_nw)"/>
+  <circle cx="50" cy="150" r="2" fill="#fff" opacity="0.88"/>
+  <circle cx="150" cy="150" r="4.5" fill="#D946A8" opacity="0.78" filter="url(#wt_nw)"/>
+  <circle cx="150" cy="150" r="2" fill="#fff" opacity="0.88"/>
+  <circle cx="100" cy="152" r="5" fill="#14B8A6" opacity="0.88" filter="url(#wt_nw)"/>
+  <circle cx="100" cy="152" r="2.2" fill="#fff" opacity="0.92"/>
+  <circle cx="62" cy="72" r="3.2" fill="#FF5C45" opacity="0.92"/>
+  <circle cx="138" cy="72" r="3.2" fill="#D946A8" opacity="0.92"/>
+  <circle cx="100" cy="104" r="3.5" fill="#14B8A6" opacity="0.95"/>
+  <circle cx="75" cy="128" r="2.8" fill="#FF5C45" opacity="0.72"/>
+  <circle cx="125" cy="128" r="2.8" fill="#D946A8" opacity="0.72"/>
+</svg>

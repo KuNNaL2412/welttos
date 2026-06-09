@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Thank You — Welttos</title>
+
+<!-- Tell Google not to index this page (it's a conversion landing page, not content) -->
+<meta name="robots" content="noindex, nofollow"/>
+<meta name="description" content="Thanks for reaching out to Welttos. We'll respond within 2 business hours."/>
+<meta name="theme-color" content="#FFFCF7"/>
+
+<!-- Favicons -->
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg"/>
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png"/>
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png"/>
+<link rel="shortcut icon" href="assets/favicon.ico"/>
+<link rel="manifest" href="manifest.json"/>
+
+<!-- Fonts + CSS -->
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css"/>
+
+<!-- ════════════════════════════════════════════════════════════
+  AD CAMPAIGN CONVERSION TRACKING
+  Uncomment + paste in your tracking IDs after you set up campaigns.
+═══════════════════════════════════════════════════════════════ -->
+
+<!-- ─── Google Ads conversion tracking ─── -->
+<!-- Get the snippet from Ads → Tools → Conversions → Action → Tag setup
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-XXXXXXXXXX');
+  gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXXX/XXXXXXXXX'});
+</script>
+-->
+
+<!-- ─── Meta (Facebook + Instagram) Pixel — Lead event ─── -->
+<!--
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'YOUR_PIXEL_ID');
+  fbq('track', 'PageView');
+  fbq('track', 'Lead');
+</script>
+-->
+
+<!-- ─── LinkedIn Insight Tag — conversion ─── -->
+<!--
+<script type="text/javascript">
+_linkedin_partner_id = "YOUR_PARTNER_ID";
+window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+</script>
+<script type="text/javascript">
+(function(l) {
+if (!l){window.lintrk = function(a,b){window.lintrk.q.push([a,b])};
+window.lintrk.q=[]}
+var s = document.getElementsByTagName("script")[0];
+var b = document.createElement("script");
+b.type = "text/javascript";b.async = true;
+b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+s.parentNode.insertBefore(b, s);})(window.lintrk);
+</script>
+-->
+
+<!-- ─── Google Analytics 4 — track form submission as conversion event ─── -->
+<!-- This fires automatically once GA4 is set up on the main pages; this snippet -->
+     <!-- additionally fires a custom "generate_lead" event for ad-funnel attribution. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7E89B5433L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7E89B5433L');
+  gtag('event', 'generate_lead', { 'currency': 'INR', 'value': 0 });
+</script>
+
+
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<nav id="main-nav">
+  <a href="index.html" class="logo">
+    <div class="logo-mark"><img src="assets/logo.svg" alt="Welttos logo"/></div>
+    Welt<em>tos</em>
+  </a>
+
+  <button class="hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-sidebar">
+    <span class="hamburger-bars"><span></span></span>
+  </button>
+
+  <div class="nav-links" id="nav-sidebar">
+    <div class="sidebar-header">Navigation</div>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="nav-cta">Get a Demo</a>
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme" title="Toggle light/dark theme">
+      <div class="theme-toggle-thumb" id="theme-icon">☀️</div>
+    </button>
+  </div>
+
+  <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+</nav>
+
+<main>
+
+  <section style="padding: 80px 5vw 50px; text-align: center; position: relative;">
+    <div style="max-width: 720px; margin: 0 auto;">
+
+      <!-- Animated checkmark in a green circle -->
+      <div style="width: 110px; height: 110px; border-radius: 50%; background: rgba(20,184,166,0.15); border: 2px solid #14B8A6; display: flex; align-items: center; justify-content: center; margin: 0 auto 32px; animation: pop .6s cubic-bezier(.34,1.56,.64,1) both;">
+        <svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="#14B8A6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" style="animation: draw .8s ease .3s both;">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+
+      <div class="chip" style="margin-bottom: 22px;"><div class="chip-dot"></div>MESSAGE RECEIVED</div>
+
+      <h1 style="margin-bottom: 18px;">Thanks for <span class="grad">reaching out</span></h1>
+      <p style="font-size: 1.1rem; color: var(--text2); line-height: 1.7; margin-bottom: 36px;">
+        Your message landed safely in our inbox. We'll get back to you within <strong>2 business hours</strong> during our working hours (Mon–Sat, 9 AM – 7 PM IST).
+      </p>
+
+      <div class="btns" style="justify-content: center;">
+        <a href="index.html" class="btn btn-fill">← Back to Home</a>
+        <a href="products.html" class="btn btn-outline">Explore our products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What happens next -->
+  <section class="sec-alt-bg">
+    <div class="sec-hd">
+      <div class="chip"><div class="chip-dot"></div>WHAT HAPPENS NEXT</div>
+      <h2>Here's <span class="grad">the plan</span></h2>
+      <p class="sec-sub">No surprises — here's exactly what to expect in the next 24 hours.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3 class="step-title">We review your request</h3>
+        <p class="step-desc">Our team reads through your message within 2 business hours and prepares a tailored response based on what you need.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3 class="step-title">Quick discovery call</h3>
+        <p class="step-desc">We schedule a 20-minute call (Zoom or Google Meet) to understand your use case, scale, and goals in detail.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3 class="step-title">Custom proposal</h3>
+        <p class="step-desc">You receive a tailored solution outline with pricing, timeline, and integration plan — no obligation, no pressure.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Side channels -->
+  <section style="padding: 70px 5vw;">
+    <div class="sec-hd">
+      <h2>Need to reach us <span class="grad">faster?</span></h2>
+      <p class="sec-sub">For urgent matters, use any of these direct channels.</p>
+    </div>
+
+    <div style="max-width: 700px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+      <a href="https://wa.me/918975655663?text=Hi!%20I%20just%20submitted%20the%20form%20on%20welttos.com" target="_blank" rel="noopener" class="ctc-item" style="text-decoration: none; padding: 22px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; text-align: center; transition: transform .25s, border-color .25s;">
+        <div style="font-size: 2rem; margin-bottom: 10px;">💬</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: .7rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px;">WhatsApp</div>
+        <div style="color: var(--text); font-weight: 500; font-size: .95rem;">Chat now</div>
+      </a>
+      <a href="tel:+918975655663" class="ctc-item" style="text-decoration: none; padding: 22px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; text-align: center; transition: transform .25s, border-color .25s;">
+        <div style="font-size: 2rem; margin-bottom: 10px;">📞</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: .7rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px;">Call</div>
+        <div style="color: var(--text); font-weight: 500; font-size: .95rem;">+91 8975655663</div>
+      </a>
+      <a href="mailto:info@welttos.com" class="ctc-item" style="text-decoration: none; padding: 22px; background: var(--card); border: 1px solid var(--border); border-radius: 14px; text-align: center; transition: transform .25s, border-color .25s;">
+        <div style="font-size: 2rem; margin-bottom: 10px;">✉️</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: .7rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 4px;">Email</div>
+        <div style="color: var(--text); font-weight: 500; font-size: .95rem;">info@welttos.com</div>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="fg">
+    <div class="fc">
+      <a href="index.html" class="logo" style="margin-bottom: 16px;">
+        <div class="logo-mark"><img src="assets/logo.svg" alt="Welttos logo"/></div>
+        Welt<em>tos</em>
+      </a>
+      <p style="color: var(--muted); font-size: .9rem; line-height: 1.7; max-width: 280px;">AI &amp; Tech solutions built for ambitious teams. Based in Pune, building for the world.</p>
+    </div>
+    <div class="fc">
+      <h4>Company</h4>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="fc">
+      <h4>Solutions</h4>
+      <a href="products.html#voice">AI Voice Agents</a>
+      <a href="products.html#docs">Document Monitoring</a>
+      <a href="products.html#mygate">MyGate App</a>
+    </div>
+    <div class="fc">
+      <h4>Get in Touch</h4>
+      <a href="mailto:info@welttos.com">info@welttos.com</a>
+      <a href="tel:+918975655663">+91 8975655663</a>
+      <a href="https://wa.me/918975655663" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+  <div class="fb">
+    <span>© 2026 Welttos. All rights reserved.</span>
+    <span style="color: var(--muted); font-size: .85rem;">Made in Pune 🇮🇳</span>
+  </div>
+</footer>
+
+<style>
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  60% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 1; }
+}
+@keyframes draw {
+  from { stroke-dasharray: 30; stroke-dashoffset: 30; }
+  to { stroke-dasharray: 30; stroke-dashoffset: 0; }
+}
+.ctc-item:hover { transform: translateY(-4px); border-color: var(--borderc) !important; }
+</style>
+
+<!-- WhatsApp Click-to-Chat -->
+<a href="https://wa.me/918975655663?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20Welttos%27s%20AI%20solutions."
+   class="whatsapp-fab"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chat with Welttos on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/>
+  </svg>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
