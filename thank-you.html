@@ -75,17 +75,17 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 -->
 
 <!-- ─── Google Analytics 4 — track form submission as conversion event ─── -->
-<!-- This fires automatically once GA4 is set up on the main pages; this snippet -->
-     <!-- additionally fires a custom "generate_lead" event for ad-funnel attribution. -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7E89B5433L"></script>
+<!-- This fires automatically once GA4 is set up on the main pages; this snippet
+     additionally fires a custom "generate_lead" event for ad-funnel attribution.
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-7E89B5433L');
+  gtag('config', 'G-XXXXXXXXXX');
   gtag('event', 'generate_lead', { 'currency': 'INR', 'value': 0 });
 </script>
-
+-->
 
 </head>
 <body>
@@ -94,7 +94,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 
 <nav id="main-nav">
   <a href="index.html" class="logo">
-    <div class="logo-mark"><img src="assets/logo.svg" alt="Welttos logo"/></div>
+    <div class="logo-mark"><img src="assets/logo.svg" alt="Welttos logo" decoding="async"/></div>
     Welt<em>tos</em>
   </a>
 
@@ -203,7 +203,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   <div class="fg">
     <div class="fc">
       <a href="index.html" class="logo" style="margin-bottom: 16px;">
-        <div class="logo-mark"><img src="assets/logo.svg" alt="Welttos logo"/></div>
+        <div class="logo-mark"><img src="assets/logo.svg" alt="Welttos logo" decoding="async"/></div>
         Welt<em>tos</em>
       </a>
       <p style="color: var(--muted); font-size: .9rem; line-height: 1.7; max-width: 280px;">AI &amp; Tech solutions built for ambitious teams. Based in Pune, building for the world.</p>
@@ -219,7 +219,7 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
       <h4>Solutions</h4>
       <a href="products.html#voice">AI Voice Agents</a>
       <a href="products.html#docs">Document Monitoring</a>
-      <a href="products.html#mygate">MyGate App</a>
+      <!-- <a href="products.html#mygate">MyGate App</a> --> <!-- enabled in future release -->
     </div>
     <div class="fc">
       <h4>Get in Touch</h4>
@@ -258,6 +258,6 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
   </svg>
 </a>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>

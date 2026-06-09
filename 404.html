@@ -72,21 +72,27 @@
 }
 </style>
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7E89B5433L"></script>
+<!-- ════════════════════════════════════════════════
+  GOOGLE ANALYTICS 4 — UNCOMMENT AND ADD YOUR ID
+  Get your Measurement ID from https://analytics.google.com
+  (Create a property → Web stream → copy the "G-XXXXXXXXXX" ID)
+═══════════════════════════════════════════════════ -->
+<!--
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-7E89B5433L');
+  gtag('config', 'G-XXXXXXXXXX');
 </script>
-
+-->
 </head>
 <body>
 
 <canvas id="bg-canvas"></canvas>
 
 <div class="err-wrap">
-  <div class="err-logo"><img src="assets/logo.svg" alt="Welttos"/></div>
+  <div class="err-logo"><img src="assets/logo.svg" alt="Welttos" decoding="async"/></div>
   <div class="err-code">404</div>
   <div class="err-tag">Page Not Found</div>
   <h1 class="err-title">This page took an unscheduled vacation</h1>
@@ -97,7 +103,7 @@
   </div>
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/main.js" defer></script>
 
 <!-- WhatsApp Click-to-Chat -->
 <a href="https://wa.me/918975655663?text=Hi!%20I%27d%20like%20to%20know%20more%20about%20Welttos%27s%20AI%20solutions."

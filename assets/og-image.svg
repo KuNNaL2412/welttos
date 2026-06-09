@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Background gradient: warm cream -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFCF7"/>
+      <stop offset="100%" stop-color="#FFF5EE"/>
+    </linearGradient>
+    <!-- Brand gradient: tomato → amber → raspberry -->
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5C45"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D946A8"/>
+    </linearGradient>
+    <!-- Inner badge background (matches logo style) -->
+    <radialGradient id="badgeBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2E1D1A"/>
+      <stop offset="100%" stop-color="#1A0F0D"/>
+    </radialGradient>
+    <!-- Soft glow filter for the wordmark -->
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Subtle decorative network nodes (top-left, bottom-right corners) -->
+  <g opacity="0.18" stroke="#FF5C45" stroke-width="0.8" fill="none">
+    <line x1="50" y1="80" x2="180" y2="140"/>
+    <line x1="180" y1="140" x2="120" y2="280"/>
+    <line x1="180" y1="140" x2="320" y2="100"/>
+    <line x1="1020" y1="550" x2="1120" y2="460"/>
+    <line x1="1020" y1="550" x2="950" y2="430"/>
+    <line x1="1080" y1="510" x2="1120" y2="380"/>
+  </g>
+  <g opacity="0.7">
+    <circle cx="50" cy="80" r="3.5" fill="#FF5C45"/>
+    <circle cx="180" cy="140" r="4" fill="#D946A8"/>
+    <circle cx="120" cy="280" r="3" fill="#14B8A6"/>
+    <circle cx="320" cy="100" r="3" fill="#F59E0B"/>
+    <circle cx="1020" cy="550" r="3.5" fill="#FF5C45"/>
+    <circle cx="1120" cy="460" r="3" fill="#D946A8"/>
+    <circle cx="950" cy="430" r="3" fill="#14B8A6"/>
+    <circle cx="1080" cy="510" r="3" fill="#F59E0B"/>
+    <circle cx="1120" cy="380" r="3" fill="#FF5C45"/>
+  </g>
+
+  <!-- ─── LOGO BADGE (top-left) ─── -->
+  <g transform="translate(80, 80)">
+    <circle cx="50" cy="50" r="50" fill="url(#badgeBg)" stroke="rgba(255,92,69,0.3)" stroke-width="1"/>
+    <!-- W glyph -->
+    <path d="M 22 32 L 32 70 L 50 50 L 68 70 L 78 32"
+          stroke="url(#brandGrad)" stroke-width="6" fill="none"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Small accent dots -->
+    <circle cx="22" cy="32" r="2.5" fill="#FF5C45"/>
+    <circle cx="78" cy="32" r="2.5" fill="#D946A8"/>
+    <circle cx="50" cy="50" r="2.5" fill="#14B8A6"/>
+  </g>
+
+  <!-- ─── MAIN HEADLINE ─── -->
+  <!-- "AI & TECH SOLUTIONS" eyebrow -->
+  <text x="80" y="280" font-family="'JetBrains Mono', monospace" font-size="22"
+        fill="#FF5C45" letter-spacing="6" font-weight="500">
+    AI &amp; TECH SOLUTIONS
+  </text>
+
+  <!-- Main brand name -->
+  <text x="78" y="395" font-family="'Space Grotesk', sans-serif" font-size="120"
+        font-weight="800" letter-spacing="-3"
+        fill="url(#brandGrad)">
+    Welttos
+  </text>
+
+  <!-- Tagline -->
+  <text x="80" y="465" font-family="'Space Grotesk', sans-serif" font-size="36"
+        fill="#1F1414" font-weight="600" letter-spacing="-0.5">
+    AI Voice Agents · Document AI · Smart Solutions
+  </text>
+
+  <!-- ─── BOTTOM ROW ─── -->
+  <!-- URL pill -->
+  <g transform="translate(80, 530)">
+    <rect width="220" height="44" rx="22" fill="#FF5C45"/>
+    <text x="110" y="29" font-family="'Space Grotesk', sans-serif" font-size="18"
+          fill="#FFFFFF" font-weight="600" text-anchor="middle">
+      welttos.com →
+    </text>
+  </g>
+
+  <!-- Location chip -->
+  <g transform="translate(320, 530)">
+    <rect width="180" height="44" rx="22" fill="rgba(255,92,69,0.10)" stroke="rgba(255,92,69,0.30)" stroke-width="1"/>
+    <circle cx="22" cy="22" r="4" fill="#FF5C45"/>
+    <text x="38" y="28" font-family="'Space Grotesk', sans-serif" font-size="16"
+          fill="#1F1414" font-weight="500">
+      Pune, India
+    </text>
+  </g>
+
+  <!-- Right side: decorative big circle -->
+  <g transform="translate(950, 250)" opacity="0.95">
+    <circle cx="0" cy="0" r="180" fill="url(#badgeBg)" stroke="rgba(255,92,69,0.25)" stroke-width="2"/>
+
+    <!-- Network connections -->
+    <g stroke="#FF5C45" stroke-width="1.2" fill="none" opacity="0.5">
+      <line x1="-120" y1="-80" x2="0" y2="-50"/>
+      <line x1="120" y1="-80" x2="0" y2="-50"/>
+      <line x1="-110" y1="80" x2="-40" y2="50"/>
+      <line x1="110" y1="80" x2="40" y2="50"/>
+      <line x1="0" y1="-50" x2="-40" y2="50"/>
+      <line x1="0" y1="-50" x2="40" y2="50"/>
+      <line x1="-40" y1="50" x2="40" y2="50"/>
+    </g>
+
+    <!-- Big W -->
+    <path d="M -55 -30 L -30 70 L 0 30 L 30 70 L 55 -30"
+          stroke="url(#brandGrad)" stroke-width="10" fill="none"
+          stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Network nodes -->
+    <circle cx="-120" cy="-80" r="6" fill="#FF5C45"/>
+    <circle cx="120" cy="-80" r="6" fill="#D946A8"/>
+    <circle cx="-110" cy="80" r="6" fill="#14B8A6"/>
+    <circle cx="110" cy="80" r="6" fill="#F59E0B"/>
+    <circle cx="0" cy="-50" r="4" fill="#FF5C45"/>
+    <circle cx="-40" cy="50" r="4" fill="#D946A8"/>
+    <circle cx="40" cy="50" r="4" fill="#14B8A6"/>
+  </g>
+</svg>

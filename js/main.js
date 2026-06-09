@@ -26,7 +26,8 @@ function toggleTheme() {
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
   let W, H, nodes = [];
-  const N = 90;
+  /* Adaptive node count: fewer nodes on mobile = less CPU = better TBT/INP */
+  const N = window.innerWidth < 768 ? 45 : 90;
 
   const DARK = {
     nodePrimary:   { r: 255, g: 122, b: 101 },  /* tomato light */
