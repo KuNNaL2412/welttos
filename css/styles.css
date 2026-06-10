@@ -304,8 +304,8 @@ h2 {
   font-weight: 800; letter-spacing: -.03em; line-height: 1.15;
   color: var(--text); margin-bottom: 16px;
 }
-h2 .hl { color: var(--primary); }
-h2 .hlv { color: var(--violet); }
+h2 .hl, h1 .hl { color: var(--primary); }
+h2 .hlv, h1 .hlv { color: var(--violet); }
 .sec-sub { font-size: 1rem; color: var(--text2); max-width: 540px; line-height: 1.75; }
 .sec-hd { margin-bottom: 60px; }
 .sec-hd.center { text-align: center; }
